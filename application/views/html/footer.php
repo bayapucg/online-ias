@@ -39,7 +39,8 @@
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
            <div>
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15508.533553739358!2d79.42229016632778!3d13.649648896616428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4d4a512cd0b479%3A0x8cddee2144a376b8!2sShiv%20Jyoti%20Nagar%2C%20Tirupati%2C%20Andhra%20Pradesh%20517507!5e0!3m2!1sen!2sin!4v1574686910900!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+		   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3807.098601801609!2d78.50665051416513!3d17.40705508806682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9997f15d6d9f%3A0x413092f3066f07a!2s1-9-295%2F9%2F2%2C%20Vittal%20Nagar%2C%20Adikmet%2C%20Hyderabad%2C%20Telangana%20500020!5e0!3m2!1sen!2sin!4v1581235596171!5m2!1sen!2sin" width="100%" height="250" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+				
 		   </div>
           </div>
 

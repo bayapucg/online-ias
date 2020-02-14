@@ -154,6 +154,64 @@
 
          <div class="col-md-3">
 			 <div class="card">
+			
+				<a href="https://zoom.us/signin">
+				<img src="<?php echo base_url(); ?>assets/design/img/cat1.jpg" alt="" class="img-fluid">
+				 <h4 class="title text-center"><a href="">Class 1</a></h4>
+				</a>
+			 </div>
+		 </div>
+		 <div class="col-md-3">
+			 <div class="card">
+			
+				<a href="https://zoom.us/signin">
+				<img src="<?php echo base_url(); ?>assets/design/img/cat1.jpg" alt="" class="img-fluid">
+				 <h4 class="title text-center"><a href="">Class 1</a></h4>
+				</a>
+			 </div>
+		 </div>
+		 <div class="col-md-3">
+			 <div class="card">
+			
+				<a href="https://zoom.us/signin">
+				<img src="<?php echo base_url(); ?>assets/design/img/cat1.jpg" alt="" class="img-fluid">
+				 <h4 class="title text-center"><a href="">Class 1</a></h4>
+				</a>
+			 </div>
+		 </div>
+		 <div class="col-md-3">
+			 <div class="card">
+			
+				<a href="https://zoom.us/signin">
+				<img src="<?php echo base_url(); ?>assets/design/img/cat1.jpg" alt="" class="img-fluid">
+				 <h4 class="title text-center"><a href="">Class 1</a></h4>
+				</a>
+			 </div>
+		 </div>
+		
+		 
+		
+		 <div class="col-md-12 text-right mt-3">
+			 <a href="all-saved-videos.php" class="btn btn-primary"> See More Videos</a>
+		 </div>
+		 
+
+        </div>
+
+      </div>
+    </section>
+	<section class="saved-videos">
+      <div class="container">
+
+        <header class="section-header wow fadeInUp">
+          <h3>IAS VIDEOS</h3>
+          
+        </header>
+
+        <div class="row">
+
+         <div class="col-md-3">
+			 <div class="card">
 				<video controls width="100%">
 					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/mp4">
 					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/ogg">
