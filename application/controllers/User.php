@@ -23,7 +23,7 @@ class User extends CI_Controller {
 				$this->load->view('html/login');
 				$this->load->view('html/footer-links');
 		}else{
-				redirect('dashboard');
+				redirect('profile');
 		}
 	}
 	public function registration()
@@ -33,7 +33,7 @@ class User extends CI_Controller {
 				$this->load->view('html/signup');
 				$this->load->view('html/footer-links');
 		}else{
-				redirect('dashboard');
+				redirect('profile');
 		}
 	}
 	public function forgotpassword()
@@ -43,7 +43,7 @@ class User extends CI_Controller {
 				$this->load->view('html/forgot_pass');
 				$this->load->view('html/footer-links');
 		}else{
-				redirect('dashboard');
+				redirect('profile');
 		}
 	}
 	public function signuppost()
@@ -74,6 +74,7 @@ class User extends CI_Controller {
 				$save=$this->User_model->save_user($ad);
 				if(count($save)>0){
 					$c_d=$this->User_model->get_basic_customer_data($save);
+					echo '<pre>';print_r($c_d);exit;
 					$this->session->set_userdata('rs_d',$c_d);
 					$this->session->set_flashdata('success',"Registered successfully");
 					redirect('dashboard');
@@ -83,7 +84,7 @@ class User extends CI_Controller {
 				}
 				//echo '<pre>';print_r($post);exit;
 		}else{
-				redirect('dashboard');
+				redirect('profile');
 		}
 	}	
 	public  function loginpost(){
@@ -101,13 +102,13 @@ class User extends CI_Controller {
 					$ud=array('user_login'=>0,'updated_at'=>date('Y-m-d H:i:s'));
 					$update=$this->User_model->update_user_d($cd['c_id'],$ud);
 					$this->session->set_userdata('rs_d',$c_d);
-					redirect('dashboard');
+					redirect('profile');
 				}else{
 					$this->session->set_flashdata('error',"Invalid login details. Please try again");
 					redirect('user');
 				}
 			}else{
-				redirect('dashboard');
+				redirect('profile');
 			}
 	}
 	public function forgotpost(){
@@ -131,7 +132,7 @@ class User extends CI_Controller {
 
 			}else{
 				$this->session->set_flashdata('error','The email you entered is not a registered email. Please try again. ');
-				redirect('admin');	
+				redirect('user');	
 			}
 		
 	}

@@ -1,5 +1,4 @@
-<?php include("header-links.php"); ?>
-<?php include("header.php"); ?>
+
 <section style="background:#f1f1f1;" >
 
 		
@@ -80,5 +79,3 @@
 		</div>
 		</div>
 	</section>
-<?php include("footer.php"); ?>
-<?php include("header-links.php"); ?>

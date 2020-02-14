@@ -26,6 +26,6 @@ class Dashboard extends sidebar {
         $this->session->unset_userdata($userinfo);
 		$this->session->sess_destroy('sai_f');
 		$this->session->unset_userdata('sai_f');
-        redirect('admin');
+        redirect('user');
 	}
 }

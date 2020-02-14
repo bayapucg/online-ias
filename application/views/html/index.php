@@ -5,23 +5,30 @@
         <ol class="carousel-indicators"></ol>
 
         <div class="carousel-inner" role="listbox">
-
-        
-
-          <div class="carousel-item active">
-            <div class="carousel-background"><img src="<?php echo base_url(); ?>assets/design/img/intro-carousel/3.jpg" alt=""></div>
-            <div class="carousel-container">
-              <div class="carousel-content">
-                <h2>Best online IAS Academy</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                <a href="#featured-services" class="btn-get-started scrollto">Get Started</a>
-              </div>
-            </div>
-          </div>
-		 
-
+		<?php if(isset($b_list) && count($b_list)>0){ ?>
+				<?php $cnt=1;foreach($b_list as $li){ ?>
+					<?php if($cnt==1){ ?>
+					  <div class="carousel-item active">
+						<div class="carousel-background"><img src="<?php echo base_url('assets/home_banners/'.$li['image']); ?>" alt=""></div>
+						<div class="carousel-container">
+						  <div class="carousel-content">
+							<h2><?php echo isset($li['title'])?$li['title']:''; ?></h2>
+						  </div>
+						</div>
+					  </div>
+					<?php }else{ ?>
+					<div class="carousel-item">
+						<div class="carousel-background"><img src="<?php echo base_url('assets/home_banners/'.$li['image']); ?>" alt=""></div>
+						<div class="carousel-container">
+						  <div class="carousel-content">
+							<h2><?php echo isset($li['title'])?$li['title']:''; ?></h2>
+						  </div>
+						</div>
+					  </div>
+					<?php } ?>
+			<?php $cnt++;} ?>
+		  <?php } ?>
         </div>
-
         <a class="carousel-control-prev" href="#introCarousel" role="button" data-slide="prev">
           <span class="carousel-control-prev-icon ion-chevron-left" aria-hidden="true"></span>
           <span class="sr-only">Previous</span>
@@ -200,6 +207,7 @@
 
       </div>
     </section>
+	<?php if(isset($dem_video) && count($dem_video)>0){ ?>
 	<section class="saved-videos">
       <div class="container">
 
@@ -209,54 +217,23 @@
         </header>
 
         <div class="row">
-
+	<?php foreach($dem_video as $li){ ?>
          <div class="col-md-3">
 			 <div class="card">
 				<video controls width="100%">
-					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/mp4">
-					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/ogg">
+					<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/mp4">
+					<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/ogg">
 				</video>
 				<a href="video-details.php">
 				<div class="py-2">
-					<h5 class="text-center">Sample Video1</h5>
+					<h5 class="text-center"><?php echo isset($li['title'])?$li['title']:''; ?></h5>
 				</div></a>
 			 </div>
 		 </div>
-		 <div class="col-md-3">
-			 <div class="card">
-				<video controls width="100%">
-					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/mp4">
-					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/ogg">
-				</video>
-				<div class="py-2">
-					<h5 class="text-center">Sample Video1</h5>
-				</div>
-			 </div>
-		 </div>
-		 <div class="col-md-3">
-			 <div class="card">
-				<video controls width="100%">
-					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/mp4">
-					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/ogg">
-				</video>
-				<div class="py-2">
-					<h5 class="text-center">Sample Video1</h5>
-				</div>
-			 </div>
-		 </div>
-		 <div class="col-md-3">
-			 <div class="card">
-				<video controls width="100%">
-					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/mp4">
-					<source src="<?php echo base_url(); ?>assets/design/video/class1.mp4" type="video/ogg">
-				</video>
-				<div class="py-2">
-					<h5 class="text-center">Sample Video1</h5>
-				</div>
-			 </div>
-		 </div> 
+	<?php } ?>
+		  
 		 <div class="col-md-12 text-right mt-3">
-			 <a href="all-saved-videos.php" class="btn btn-primary"> See More Videos</a>
+			 <a href="<?php echo base_url('videos'); ?>" class="btn btn-primary"> See More Videos</a>
 		 </div>
 		 
 
@@ -264,6 +241,7 @@
 
       </div>
     </section>
+	<?php } ?>
 
     <!--==========================
       Call To Action Section

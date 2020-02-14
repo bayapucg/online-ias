@@ -18,6 +18,10 @@ class Frontend extends CI_Controller {
 			if($this->session->userdata('rs_d'))
 			{
 				$cd=$this->session->userdata('rs_d');
+				if($cd['role']==1){
+					redirect('dashboard');
+				}
+				//echo '<pre>';print_r($cd);exit;
 				$cus_d['cdata']=$this->User_model->get_customer_data($cd['c_id']);
 				$this->load->view('html/header',$cus_d);
 			}else{

@@ -24,7 +24,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |
 */
 $config['base_url'] = 'http://localhost/online-ias/';
-
+$config['keyId'] ='rzp_test_1CSnweG2HOTawb';
+$config['API_keySecret'] = '5idRiZ46N5rQFBWwVwBgtABF';
 /*
 |--------------------------------------------------------------------------
 | Index File
