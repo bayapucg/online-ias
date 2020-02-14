@@ -28,6 +28,12 @@ class Home_model extends CI_Model
 		$this->db->where('t.status',1);
         return $this->db->get()->result_array();
 	}
+	/* payment check */ 
+	public  function check_payment_details($id){
+		$this->db->select('p_id,c_id')->from('payment_details');
+		$this->db->where('c_id',$id);
+		return $this->db->get()->row_array();
+	}
 	
 	
 	
