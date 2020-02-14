@@ -121,6 +121,23 @@
             
           </ul>
         </li>
+		<li class="treeview">
+          <a href="#">
+            <i class="fa fa-envelope"></i> <span>Payment</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu" style="display: none;">
+            <li>
+              <a href="<?php echo base_url('video/add'); ?>">Add 
+                
+              </a>
+            </li>
+            <li><a href="<?php echo base_url('video/index'); ?>">List</a></li>
+            
+          </ul>
+        </li>
 		    
       </ul>
     </section>

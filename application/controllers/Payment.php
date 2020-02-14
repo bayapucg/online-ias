@@ -16,7 +16,6 @@ class Payment extends Frontend {
 		$this->load->helper('directory');
 		$this->load->helper('security');
 		$this->load->model('Payment_model');
-		$this->load->library('pdf');
 		//https://github.com/razorpay/razorpay-php
 		}
 	public function index()
@@ -25,6 +24,7 @@ class Payment extends Frontend {
 		$api_id= $this->config->item('keyId');
 		$api_Secret= $this->config->item('API_keySecret');
 		$api = new RazorpayApi($api_id,$api_Secret);
+		echo '<pre>';print_r($api);exit;
 		//$api = new RazorpayApi($this->config->load('keyId'), $this->config->load('API_keySecret'));
 		$orderData = [
 				'receipt'         => 3456,

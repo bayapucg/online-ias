@@ -23,6 +23,12 @@ class Home_model extends CI_Model
 		$this->db->where('status',1);
 		return $this->db->get()->result_array();
 	}
+	public  function get_online_videos(){
+		$this->db->select('v_id,title,topic,teacher,video,org_video')->from('videos');
+		$this->db->where('type','Live');
+		$this->db->where('status',1);
+		return $this->db->get()->result_array();
+	}
 	public  function get_testimonials_list(){
 		$this->db->select('t.name,t.message,t.image')->from('testimonials as t');
 		$this->db->where('t.status',1);
