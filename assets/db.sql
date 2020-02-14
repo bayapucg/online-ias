@@ -16,6 +16,35 @@ CREATE DATABASE /*!32312 IF NOT EXISTS*/`ias` /*!40100 DEFAULT CHARACTER SET lat
 
 USE `ias`;
 
+/*Table structure for table `admin` */
+
+DROP TABLE IF EXISTS `admin`;
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `role` varchar(45) DEFAULT NULL,
+  `name` varchar(250) DEFAULT NULL,
+  `email` varchar(250) DEFAULT NULL,
+  `designation` varchar(250) DEFAULT NULL,
+  `dob` varchar(250) DEFAULT NULL,
+  `qualification` varchar(250) DEFAULT NULL,
+  `pwd` varchar(250) DEFAULT NULL,
+  `org_password` varchar(250) DEFAULT NULL,
+  `address` varchar(250) DEFAULT NULL,
+  `mobile` varchar(45) DEFAULT NULL,
+  `notes` varchar(250) DEFAULT NULL,
+  `profile_pic` varchar(250) DEFAULT NULL,
+  `status` int(11) DEFAULT '1',
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `created_by` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+/*Data for the table `admin` */
+
+insert  into `admin`(`id`,`role`,`name`,`email`,`designation`,`dob`,`qualification`,`pwd`,`org_password`,`address`,`mobile`,`notes`,`profile_pic`,`status`,`created_at`,`updated_at`,`created_by`) values (3,'1','Admin','admin@gmail.com','','','','e10adc3949ba59abbe56e057f20f883e','123456','kothallai','9638527410','texXZ','1581683134.png',1,NULL,'2020-02-14 17:55:33',NULL);
+
 /*Table structure for table `contactus` */
 
 DROP TABLE IF EXISTS `contactus`;
@@ -58,7 +87,45 @@ CREATE TABLE `customers` (
 
 /*Data for the table `customers` */
 
-insert  into `customers`(`c_id`,`role`,`name`,`email`,`pwd`,`mobile`,`address`,`org_pwd`,`p_pic`,`status`,`created_at`,`updated_at`,`user_login`) values (1,'1','Admin','admin@gmail.com','e10adc3949ba59abbe56e057f20f883e','7894561230','testing','123456','1575617105.png',1,'2019-12-06 12:55:05','2019-12-06 12:55:05',0),(11,'2','Vasu','vasu@gmail.com','e10adc3949ba59abbe56e057f20f883e','8500050944','kadapa ','123456','1575113478.jpg',1,'2019-11-30 17:38:13','2019-11-30 17:38:13',0),(12,'3','doctor','doctor@gmail.com','e10adc3949ba59abbe56e057f20f883e','9494346081',NULL,'123456',NULL,1,'2019-12-06 11:38:15','0000-00-00 00:00:00',0),(13,'4','Advocate','advocate@gmail.com','e10adc3949ba59abbe56e057f20f883e','8528528523',NULL,'123456',NULL,1,'2019-12-06 11:38:54','0000-00-00 00:00:00',0),(14,'2','Breading Rams','bb@gmail.com','e10adc3949ba59abbe56e057f20f883e','1234567890','Testing','123456','1581665183.png',1,'2020-02-14 16:08:12','2020-02-14 16:08:12',0);
+insert  into `customers`(`c_id`,`role`,`name`,`email`,`pwd`,`mobile`,`address`,`org_pwd`,`p_pic`,`status`,`created_at`,`updated_at`,`user_login`) values (11,'2','Vasu','vasu@gmail.com','e10adc3949ba59abbe56e057f20f883e','8500050944','kadapa ','123456','1575113478.jpg',1,'2019-11-30 17:38:13','2019-11-30 17:38:13',0),(12,'3','doctor','doctor@gmail.com','e10adc3949ba59abbe56e057f20f883e','9494346081',NULL,'123456',NULL,1,'2019-12-06 11:38:15','0000-00-00 00:00:00',0),(13,'4','Advocate','advocate@gmail.com','e10adc3949ba59abbe56e057f20f883e','8528528523',NULL,'123456',NULL,1,'2019-12-06 11:38:54','0000-00-00 00:00:00',0),(14,'2','Breading Rams','bb@gmail.com','e10adc3949ba59abbe56e057f20f883e','1234567890','Testing','123456','1581665183.png',1,'2020-02-14 16:08:12','2020-02-14 16:08:12',0);
+
+/*Table structure for table `home_banners` */
+
+DROP TABLE IF EXISTS `home_banners`;
+
+CREATE TABLE `home_banners` (
+  `b_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` text,
+  `image` varchar(250) DEFAULT NULL,
+  `org_image` varchar(250) DEFAULT NULL,
+  `status` int(11) DEFAULT '1',
+  `create_at` datetime DEFAULT NULL,
+  `update_at` datetime DEFAULT NULL,
+  `create_by` int(11) DEFAULT NULL,
+  PRIMARY KEY (`b_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
+
+/*Data for the table `home_banners` */
+
+insert  into `home_banners`(`b_id`,`title`,`image`,`org_image`,`status`,`create_at`,`update_at`,`create_by`) values (4,'Best online IAS Academy','1581683994.jpg','3.jpg',1,'2020-02-14 18:08:57','2020-02-14 18:09:54',3),(5,'Best online IAS Academy	','1581684116.jpg','3.jpg',1,'2020-02-14 18:11:55','2020-02-14 18:11:55',3);
+
+/*Table structure for table `payment_details` */
+
+DROP TABLE IF EXISTS `payment_details`;
+
+CREATE TABLE `payment_details` (
+  `p_id` int(11) NOT NULL AUTO_INCREMENT,
+  `c_id` int(11) DEFAULT NULL,
+  `razorpay_payment_id` varchar(250) DEFAULT NULL,
+  `razorpay_order_id` varchar(250) DEFAULT NULL,
+  `razorpay_signature` varchar(250) DEFAULT NULL,
+  `status` int(11) DEFAULT '1',
+  `creayed_at` datetime DEFAULT NULL,
+  `created_by` int(11) DEFAULT NULL,
+  PRIMARY KEY (`p_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+/*Data for the table `payment_details` */
 
 /*Table structure for table `report_comments` */
 
@@ -215,6 +282,29 @@ CREATE TABLE `upload_report_comment` (
 /*Data for the table `upload_report_comment` */
 
 insert  into `upload_report_comment`(`r_c_id`,`r_id`,`type`,`comment`,`created_at`,`created_by`) values (6,3,'replay','testing  purpose  like  this','2019-12-07 12:20:25',11),(7,3,'replay','testing purose ','2019-12-07 12:20:40',11),(8,3,'replay','Testing  like  this ','2019-12-07 12:20:59',1);
+
+/*Table structure for table `videos` */
+
+DROP TABLE IF EXISTS `videos`;
+
+CREATE TABLE `videos` (
+  `v_id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(250) DEFAULT NULL,
+  `title` varchar(250) DEFAULT NULL,
+  `topic` varchar(250) DEFAULT NULL,
+  `teacher` varchar(250) DEFAULT NULL,
+  `video` varchar(250) DEFAULT NULL,
+  `org_video` varchar(250) DEFAULT NULL,
+  `status` int(11) DEFAULT '1',
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `created_by` int(11) DEFAULT NULL,
+  PRIMARY KEY (`v_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+/*Data for the table `videos` */
+
+insert  into `videos`(`v_id`,`type`,`title`,`topic`,`teacher`,`video`,`org_video`,`status`,`created_at`,`updated_at`,`created_by`) values (5,'demo','Best online IAS Academy','Testing','Vasudevareddy','1581685660.mp4','class1.mp4',1,'2020-02-14 18:37:40',NULL,3),(6,'demo','Class 1','Class 1','Class 1','1581685714.mp4','class1.mp4',1,'2020-02-14 18:38:33',NULL,3),(7,'demo','Class 1','Class 1','Class 1','1581685730.mp4','class1.mp4',1,'2020-02-14 18:38:49',NULL,3),(8,'demo','Class 1','Class 1','Class 1','1581685744.mp4','class1.mp4',1,'2020-02-14 18:39:03',NULL,3),(10,'Live','Best online IAS Academy','Class 1','Vasudevareddy','1581687460.mp4','class1.mp4',1,'2020-02-14 19:07:39',NULL,3);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
