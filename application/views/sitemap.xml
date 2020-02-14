@@ -1,0 +1,73 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+ <!--
+ created with Free Online Sitemap Generator www.xml-sitemaps.com 
+-->
+<url>
+  <loc>https://medarogya.com/</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/hospitals/alllist</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/comingsoon/index/1</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/comingsoon/index/2</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/comingsoon/index/3</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/login</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/aboutus</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/contactus</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/termsandconditions</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/privacypolicy</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://medarogya.com/login/forgotpassword</loc>
+  <lastmod>2019-11-12T13:01:31+00:00</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>
