@@ -162,7 +162,7 @@
          <div class="col-md-3">
 			 <div class="card">
 			
-				<a href="https://zoom.us/signin">
+				<a href="#">
 				<img src="<?php echo base_url(); ?>assets/design/img/cat1.jpg" alt="" class="img-fluid">
 				 <h4 class="title text-center"><a href="">Class 1</a></h4>
 				</a>
@@ -171,7 +171,7 @@
 		 <div class="col-md-3">
 			 <div class="card">
 			
-				<a href="https://zoom.us/signin">
+				<a href="#">
 				<img src="<?php echo base_url(); ?>assets/design/img/cat1.jpg" alt="" class="img-fluid">
 				 <h4 class="title text-center"><a href="">Class 1</a></h4>
 				</a>
@@ -180,7 +180,7 @@
 		 <div class="col-md-3">
 			 <div class="card">
 			
-				<a href="https://zoom.us/signin">
+				<a href="#">
 				<img src="<?php echo base_url(); ?>assets/design/img/cat1.jpg" alt="" class="img-fluid">
 				 <h4 class="title text-center"><a href="">Class 1</a></h4>
 				</a>
@@ -189,7 +189,7 @@
 		 <div class="col-md-3">
 			 <div class="card">
 			
-				<a href="https://zoom.us/signin">
+				<a href="#">
 				<img src="<?php echo base_url(); ?>assets/design/img/cat1.jpg" alt="" class="img-fluid">
 				 <h4 class="title text-center"><a href="">Class 1</a></h4>
 				</a>
@@ -199,7 +199,7 @@
 		 
 		
 		 <div class="col-md-12 text-right mt-3">
-			 <a href="all-saved-videos.php" class="btn btn-primary"> See More Videos</a>
+			 <a href="<?php echo base_url('videos'); ?>" class="btn btn-primary"> See More Videos</a>
 		 </div>
 		 
 

@@ -1,16 +1,11 @@
-<?php include("header-links.php"); ?>
-<?php include("header.php"); ?>
-
-
-
-  <main id="main mt-5">
+<main id="main mt-5">
 
     <section id="about">
       <div class="container mt-5">
 
         <header class="section-header">
           <h3>About Us</h3>
-          <p class="text-left">Founded in Raavi's County, S.N Padu Mandal, Ongole in 2008, RosveHealth has always been a bit different. Our advisers really get to know the people and business that we help. It's what we call 'expert hand, human touch'. We have offices around the India so wherever you are, our experts can help.</p>
+          <p class="text-left">Lorem ipsum dolor sit amet, ut suspendisse pede pellentesque ipsum justo, tortor viverra lectus, aliquet phasellus egestas sodales risus arcu est, penatibus fringilla eu. Urna et dicta ligula justo adipiscing quis, hendrerit volutpat amet sodales urna ipsum, purus fusce vivamus vehicula, massa sodales quis nulla nascetur vel. Neque vivamus urna vel ante ipsum, nisl arcu lectus sit molestie, eu eu eget lobortis. Sollicitudin nec ultrices laoreet at, ultrices odio pellentesque felis egestas pharetra ultrices, nec nulla, purus nec aliquam nulla, eu voluptas pellentesque. Malesuada dignissim cras, lorem velit eu magna tristique, in dolor pede, at lacus vel magnis varius vestibulum eros. Dis dolor imperdiet porta blandit in, vitae lorem leo habitant, nec posuere nisl morbi, id adipiscing imperdiet. Malesuada vitae, sit a cum non massa pretium, porttitor at mattis ut placerat lacinia, magna sed, vestibulum vestibulum sed eros purus enim.</p>
         </header>
 		</div>
     </section>
@@ -20,7 +15,7 @@
 		<div class="container"> 
 			 <header class="section-header">
           <h3>Why Choose Us?</h3>
-          <p class="text-left">We have decades of experience handling medical negligence cases and specialise in areas including birth injuries, orthopaedic injuries and cancer misdiagnosis claims. We’ll gather expert advice on your care needs, ensuring that your compensation helps you to access the support you need to enjoy the best quality of life possible. Our medical negligence solicitors understand what you’re going through and can help you access specialist rehabilitation and support services to assist with your recovery. We know that, beyond compensation, you’ll want to know why things went wrong and we’ll help you get the apology and answers you deserve.</p>
+          <p class="text-left">Velit turpis magna nulla mauris purus, parturient nec ante nullam bibendum sodales. Justo tincidunt est donec, risus mauris, sed sit vestibulum mus lectus magna porta, sit vehicula eros lacus nulla faucibus, vitae sodales. Porta enim etiam, mauris pede mus arcu odio dapibus odio, massa euismod. Amet nulla pellentesque gravida duis. Condimentum leo enim, bibendum metus. Luctus convallis diam a cursus. Nam ornare fusce, sapien in vel vel quis inceptos. Nec nunc gravida purus libero, nostrud egestas mi, nibh donec fermentum at nec et eu, sit mauris sit pellentesque donec donec eros. Eu tincidunt integer urna diam curae, dolor mauris, aliquam pulvinar accumsan est dolor convallis, suspendisse nullam sociis at duis</p>
         </header>
 		</div>
 	</section>
@@ -70,8 +65,6 @@
 	</section>
     
   </main>
-  
-  <?php include("footer.php"); ?>
-<?php include("footer-links.php"); ?>
+
 
   
