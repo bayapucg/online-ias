@@ -13,7 +13,7 @@
           
             <div class="panel-body">
               <div class="row justify-content-center d-flex">
-			  <?php if(isset($p_u_list) && count($p_u_list)>0){ ?>
+			  
                <div class=" col-md-8 card py-4"> 
 				 <table id="example1" class="table table-bordered table-striped">
                 <thead>
@@ -56,7 +56,7 @@
                 </div>
 				<div class="clearfix">&nbsp;</div>
 			  
-			  <?php } ?>
+			  
               </div>
             </div>
                 
