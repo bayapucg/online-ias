@@ -83,11 +83,11 @@ CREATE TABLE `customers` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `user_login` int(11) DEFAULT '0',
   PRIMARY KEY (`c_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
 
 /*Data for the table `customers` */
 
-insert  into `customers`(`c_id`,`role`,`name`,`email`,`pwd`,`mobile`,`address`,`org_pwd`,`p_pic`,`status`,`created_at`,`updated_at`,`user_login`) values (11,'2','Vasu','vasu@gmail.com','e10adc3949ba59abbe56e057f20f883e','8500050944','kadapa ','123456','1575113478.jpg',1,'2019-11-30 17:38:13','2019-11-30 17:38:13',0),(12,'3','doctor','doctor@gmail.com','e10adc3949ba59abbe56e057f20f883e','9494346081',NULL,'123456',NULL,1,'2019-12-06 11:38:15','0000-00-00 00:00:00',0),(13,'4','Advocate','advocate@gmail.com','e10adc3949ba59abbe56e057f20f883e','8528528523',NULL,'123456',NULL,1,'2019-12-06 11:38:54','0000-00-00 00:00:00',0),(14,'2','Breading Rams','bb@gmail.com','e10adc3949ba59abbe56e057f20f883e','1234567890','Testing','123456','1581665183.png',1,'2020-02-14 16:08:12','2020-02-14 16:08:12',0);
+insert  into `customers`(`c_id`,`role`,`name`,`email`,`pwd`,`mobile`,`address`,`org_pwd`,`p_pic`,`status`,`created_at`,`updated_at`,`user_login`) values (11,'2','Vasu','vasu@gmail.com','e10adc3949ba59abbe56e057f20f883e','8500050944','kadapa ','123456','1575113478.jpg',1,'2019-11-30 17:38:13','2019-11-30 17:38:13',0),(14,'2','Breading Rams','bb@gmail.com','e10adc3949ba59abbe56e057f20f883e','1234567890','Testing','123456','1581665183.png',1,'2020-02-14 16:08:12','2020-02-14 16:08:12',0),(15,'2','ddd','bbb@gmail.com','e10adc3949ba59abbe56e057f20f883e','8527412365',NULL,'123456',NULL,1,'2020-02-16 18:27:34','0000-00-00 00:00:00',0),(16,'2','bbbbb','bcnc@gmail.com','e10adc3949ba59abbe56e057f20f883e','6547123333',NULL,'123456',NULL,1,'2020-02-16 18:28:27','0000-00-00 00:00:00',0),(17,'2','cvnxb','bxmncbnxbc@gmail.com','e10adc3949ba59abbe56e057f20f883e','98745632112',NULL,'123456',NULL,1,'2020-02-16 18:29:22','0000-00-00 00:00:00',0);
 
 /*Table structure for table `home_banners` */
 
@@ -126,6 +126,28 @@ CREATE TABLE `payment_details` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `payment_details` */
+
+/*Table structure for table `payments` */
+
+DROP TABLE IF EXISTS `payments`;
+
+CREATE TABLE `payments` (
+  `p_id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(250) DEFAULT NULL,
+  `description` longtext,
+  `amt` varchar(250) DEFAULT NULL,
+  `promo` varchar(250) DEFAULT NULL,
+  `promo_amt` varchar(250) DEFAULT NULL,
+  `status` int(11) DEFAULT '1',
+  `created_at` datetime DEFAULT NULL,
+  `updated_at` datetime DEFAULT NULL,
+  `created_by` int(11) DEFAULT NULL,
+  PRIMARY KEY (`p_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+
+/*Data for the table `payments` */
+
+insert  into `payments`(`p_id`,`title`,`description`,`amt`,`promo`,`promo_amt`,`status`,`created_at`,`updated_at`,`created_by`) values (1,'Best online IAS Academy','Best online IAS Academy Best online IAS Academy Best online IAS Academy','12000','VASUREDDEM','2000',1,'2020-02-16 06:42:39','2020-02-16 07:05:38',3),(2,'Few tips for get better results in examination','Few tips for get better results in examination Few tips for get better results in examination','15000','CHINNA','200',1,'2020-02-16 06:58:03','2020-02-16 07:05:56',3),(3,'Best online IAS Academy','Best online IAS Academy Best online IAS Academy Best online IAS Academy','12000','VASUR','2000',1,'2020-02-16 07:04:04',NULL,3);
 
 /*Table structure for table `report_comments` */
 
@@ -289,6 +311,7 @@ DROP TABLE IF EXISTS `videos`;
 
 CREATE TABLE `videos` (
   `v_id` int(11) NOT NULL AUTO_INCREMENT,
+  `ptype` int(11) DEFAULT NULL,
   `type` varchar(250) DEFAULT NULL,
   `title` varchar(250) DEFAULT NULL,
   `topic` varchar(250) DEFAULT NULL,
@@ -304,7 +327,7 @@ CREATE TABLE `videos` (
 
 /*Data for the table `videos` */
 
-insert  into `videos`(`v_id`,`type`,`title`,`topic`,`teacher`,`video`,`org_video`,`status`,`created_at`,`updated_at`,`created_by`) values (5,'demo','Best online IAS Academy','Testing','Vasudevareddy','1581685660.mp4','class1.mp4',1,'2020-02-14 18:37:40',NULL,3),(6,'demo','Class 1','Class 1','Class 1','1581685714.mp4','class1.mp4',1,'2020-02-14 18:38:33',NULL,3),(7,'demo','Class 1','Class 1','Class 1','1581685730.mp4','class1.mp4',1,'2020-02-14 18:38:49',NULL,3),(8,'demo','Class 1','Class 1','Class 1','1581685744.mp4','class1.mp4',1,'2020-02-14 18:39:03',NULL,3),(10,'Live','Best online IAS Academy','Class 1','Vasudevareddy','1581687460.mp4','class1.mp4',1,'2020-02-14 19:07:39',NULL,3);
+insert  into `videos`(`v_id`,`ptype`,`type`,`title`,`topic`,`teacher`,`video`,`org_video`,`status`,`created_at`,`updated_at`,`created_by`) values (5,1,'demo','Best online IAS Academy','Testing','Vasudevareddy','1581685660.mp4','class1.mp4',1,'2020-02-14 18:37:40','2020-02-16 19:21:28',3),(6,1,'demo','Class 1','Class 1','Class 1','1581685714.mp4','class1.mp4',1,'2020-02-14 18:38:33','2020-02-16 19:21:39',3),(7,1,'demo','Class 1','Class 1','Class 1','1581685730.mp4','class1.mp4',1,'2020-02-14 18:38:49','2020-02-16 19:21:48',3),(8,1,'demo','Class 1','Class 1','Class 1','1581685744.mp4','class1.mp4',1,'2020-02-14 18:39:03','2020-02-16 19:22:00',3),(10,1,'Live','Best online IAS Academy','Class 1','Vasudevareddy','1581687460.mp4','class1.mp4',1,'2020-02-14 19:07:39','2020-02-16 19:22:06',3);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
