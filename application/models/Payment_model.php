@@ -41,5 +41,10 @@ class Payment_model extends CI_Model
 		$this->db->where('status',1);
         return $this->db->get()->result_array();
 	}
+	public  function get_user_details($id){
+		$this->db->select('*')->from('customers');		
+		$this->db->where('c_id',$id);
+        return $this->db->get()->row_array();
+	}
 
 }
