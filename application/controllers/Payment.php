@@ -116,7 +116,7 @@ class Payment extends Frontend {
 	}	
 	
 	public  function successpost(){
-		if($this->session->userdata('cu_detail'))
+		if($this->session->userdata('rs_d'))
 		{ 
 				$post=$this->input->post();
 				//echo '<pre>';print_r($post);exit;
@@ -146,11 +146,11 @@ class Payment extends Frontend {
 				
 		}else{
 			$this->session->set_flashdata('error','Please login to continue');
-			redirect('customer');
+			redirect('user');
 		}
 	}
 	public  function success(){
-		if($this->session->userdata('cu_detail'))
+		if($this->session->userdata('rs_d'))
 		{ 
 				$post=$this->input->post();
 				$cd=$this->session->userdata('rs_d');
@@ -167,11 +167,11 @@ class Payment extends Frontend {
 				
 		}else{
 			$this->session->set_flashdata('error','Please login to continue');
-			redirect('customer');
+			redirect('user');
 		}
 	}
 	public  function check_coupon_code(){
-		if($this->session->userdata('cu_detail'))
+		if($this->session->userdata('rs_d'))
 		{ 
 				$post=$this->input->post();
 				$details=$this->Payment_model->get_payment_details($post['p_id']);
@@ -188,7 +188,7 @@ class Payment extends Frontend {
 				}
 		}else{
 			$this->session->set_flashdata('error','Please login to continue');
-			redirect('customer');
+			redirect('user');
 		}
 	}
 	
