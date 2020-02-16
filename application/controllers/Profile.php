@@ -22,6 +22,21 @@ class Profile extends Frontend {
 				redirect('user');
 			}
 	}
+	public function paymentlist()
+	{
+		if($this->session->userdata('rs_d'))
+		{
+				$l_data=$this->session->userdata('rs_d');
+				$data['p_u_list']=$this->User_model->get_payment_user_list($l_data['c_id']);
+				//echo '<pre>';print_r($l_data);exit;
+				$this->load->view('html/complete_payment_list',$data);
+				$this->load->view('html/footer-links');
+
+		}else{
+			$this->session->set_flashdata('loginerror','Please login to continue');
+			redirect('admin');
+		}
+	}
 	public function edit()
 	{	
 		if($this->session->userdata('rs_d'))

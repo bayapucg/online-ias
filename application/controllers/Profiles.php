@@ -56,6 +56,22 @@ class Profiles extends sidebar {
 			redirect('admin');
 		}
 	}
+	public function paymentuserlist()
+	{
+		if($this->session->userdata('sai_f'))
+		{
+				$l_data=$this->session->userdata('sai_f');
+				$data['p_u_list']=$this->Admin_model->get_payment_user_list();
+				//echo '<pre>';print_r($data);exit;
+				$this->load->view('admin/payment_userlist',$data);
+				$this->load->view('admin/footer');
+				$this->load->view('admin/footer-links');
+
+		}else{
+			$this->session->set_flashdata('loginerror','Please login to continue');
+			redirect('admin');
+		}
+	}
 	public function editpost()
 	{
 		if($this->session->userdata('sai_f'))

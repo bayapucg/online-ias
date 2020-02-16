@@ -115,11 +115,53 @@ class Payment extends Frontend {
 			}
 	}	
 	
+	public  function successpost(){
+		if($this->session->userdata('cu_detail'))
+		{ 
+				$post=$this->input->post();
+				//echo '<pre>';print_r($post);exit;
+				$cd=$this->session->userdata('rs_d');
+				//echo '<pre>';print_r($cd);exit;
+				$d=array(
+				'c_id'=>isset($cd['c_id'])?$cd['c_id']:'',
+				'p_id'=>isset($post['p_id'])?$post['p_id']:'',
+				'total_amt'=>isset($post['total_amt'])?$post['total_amt']:'',
+				'paid_amt'=>isset($post['paid_amt'])?$post['paid_amt']:'',
+				'coupon_code'=>isset($post['coupon_code'])?$post['coupon_code']:'',
+				'razorpay_payment_id'=>isset($post['razorpay_payment_id'])?$post['razorpay_payment_id']:'',
+				'razorpay_order_id'=>isset($post['razorpay_order_id'])?$post['razorpay_order_id']:'',
+				'razorpay_signature'=>isset($post['razorpay_signature'])?$post['razorpay_signature']:'',
+				'created_at'=>date('Y-m-d H:i:s'),
+				'created_by'=>isset($cd['c_id'])?$cd['c_id']:'',
+				);
+				//echo '<pre>';print_r($d);exit;
+				$save=$this->Payment_model->save_user_payments($d);
+				if(count($save)>0){
+					$this->session->set_flashdata('success','Payment successfully completed');
+					redirect('payment/success/'.base64_encode($save));
+				}else{
+					$this->session->set_flashdata('error','Technical problem will occured. Please try again');
+					redirect('payment/details/'.base64_encode($post['p_id']));
+				}
+				
+		}else{
+			$this->session->set_flashdata('error','Please login to continue');
+			redirect('customer');
+		}
+	}
 	public  function success(){
 		if($this->session->userdata('cu_detail'))
 		{ 
 				$post=$this->input->post();
-				$this->load->view('html/success');
+				$cd=$this->session->userdata('rs_d');
+					$pid=base64_decode($this->uri->segment(3));
+					if($pid==''){
+						$this->session->set_flashdata('error',"Technical problem will occured. Please try again");
+						redirect('payment/index');
+					}
+				$data['p_d']=$this->Payment_model->get_paid_amt_details($pid);
+				//echo '<pre>';print_r($data);exit;
+				$this->load->view('html/success',$data);
 				$this->load->view('html/footer');
 				$this->load->view('html/footer-links');
 				

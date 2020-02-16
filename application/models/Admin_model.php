@@ -55,6 +55,13 @@ class Admin_model extends CI_Model
         return $this->db->get()->result_array();	
 	}
 	
+	public  function get_payment_user_list(){
+		$this->db->select('c.name,c.email,c.mobile,p.title,p.description,pd.total_amt,pd.paid_amt,pd.coupon_code,pd.created_at')->from('payment_details as pd');
+		$this->db->join('payments as p','p.p_id=pd.p_id','left');		
+		$this->db->join('customers as c','c.c_id=pd.c_id','left');		
+        return $this->db->get()->result_array();	
+	}
+	
 	
 	// dashboard 
 	

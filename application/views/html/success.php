@@ -19,6 +19,22 @@
 
 	<div class="container-fluid">
 	Payment successfully completed 
+	<table class="table table-user-information">
+					<tbody>
+						<tr>
+                        <td>Title:</td>
+                        <td><?php echo isset($p_d['title'])?$p_d['title']:''; ?></td>
+                      </tr>
+					  <tr>
+                        <td>Description:</td>
+                        <td><?php echo isset($p_d['description'])?$p_d['description']:''; ?></td>
+                      </tr>
+                      <tr>
+                        <td>Paid Amount</td>
+                        <td><?php echo isset($p_d['paid_amt'])?$p_d['paid_amt']:''; ?></td>
+                      </tr>
+					   </tbody>
+                  </table>
         
     </div>
                   

@@ -45,5 +45,11 @@ class User_model extends CI_Model
 		$this->db->where('c.email',$email);
 		return $this->db->get()->row_array();
 	}
+	public  function get_payment_user_list($id){
+		$this->db->select('p.title,p.description,pd.total_amt,pd.paid_amt,pd.coupon_code,pd.created_at')->from('payment_details as pd');
+		$this->db->join('payments as p','p.p_id=pd.p_id','left');		
+		$this->db->where('pd.c_id',$id);		
+        return $this->db->get()->result_array();	
+	}
 	
 }

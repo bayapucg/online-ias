@@ -16,6 +16,7 @@
 					<a href="">My Account</a>
 					<ul>
 					  <li><a href="<?php echo base_url('profile'); ?>">Profile </a></li>
+					  <li><a href="<?php echo base_url('profile/paymentlist'); ?>">Payment List </a></li>
 					  <li><a href="<?php echo base_url('videos'); ?>">Saved Videos </a></li>
 					  <li><a href="<?php echo base_url('profile/changepassword'); ?>">Change Password</a></li>
 					  <li><a href="<?php echo base_url('dashboard/logout'); ?>">Logout</a></li>

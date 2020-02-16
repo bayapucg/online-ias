@@ -11,17 +11,21 @@
 
 		<?php if(isset($video_list) && count($video_list)>0){ ?>
 		<?php foreach($video_list as $li){ ?>
-		<div class="col-md-4">
-				<div class="card">
-					<video controls width="100%">
-						<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/mp4">
-						<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/ogg">
-					</video>
-					<div class="py-2">
-						<h5 class="text-center"><?php echo isset($li['title'])?$li['title']:''; ?></h5>
-					</div>
-				 </div>
-		</div>
+				<?php if(isset($li['video_list']) && count($li['video_list'])>0){ ?>
+					<?php foreach($li['video_list'] as $vl){ ?>
+						<div class="col-md-4">
+							<div class="card">
+								<video controls width="100%">
+									<source src="<?php echo base_url('assets/video/'.$vl['video']); ?>" type="video/mp4">
+									<source src="<?php echo base_url('assets/video/'.$vl['video']); ?>" type="video/ogg">
+								</video>
+								<div class="py-2">
+									<h5 class="text-center"><?php echo isset($vl['title'])?$vl['title']:''; ?></h5>
+								</div>
+							 </div>
+						</div>
+					<?php } ?>
+				<?php } ?>
 		<?php } ?>
 		<?php } ?>
 		

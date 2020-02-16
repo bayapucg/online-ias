@@ -86,7 +86,7 @@ table, td, th {
 					<div class="col-md-3">	<a href="<?php echo base_url('payment/index'); ?>" class="btn btn-warning">Edit</a>
 					</div>
 					<div class="col-md-3">
-						<form id="paymentform" name="paymentform" action="<?php echo base_url('payment/success'); ?>" method="POST">
+						<form id="paymentform" name="paymentform" action="<?php echo base_url('payment/successpost'); ?>" method="POST">
 						<?php $csrf = array(
 						'name' => $this->security->get_csrf_token_name(),
 						'hash' => $this->security->get_csrf_hash()
@@ -100,8 +100,8 @@ table, td, th {
 							</script>
 							<!-- Any extra fields to be submitted with the form but not sent to Razorpay -->
 							<input type="hidden" name="p_id" value="<?php echo isset($p_de['p_id'])?$p_de['p_id']:''; ?>">
-							<input type="hidden" name="total_amt" value="<?php echo isset($fee_details['cart_amt_delivery_c'])?$fee_details['cart_amt_delivery_c']: ''; ?>">
 							<input type="hidden" name="paid_amt" value="<?php echo isset($paid_amt)?$paid_amt:''; ?>">
+							<input type="hidden" name="total_amt" value="<?php echo isset($p_de['amt'])?$p_de['amt']:''; ?>">
 							<input type="hidden" name="coupon_code" value="<?php echo isset($p_post_d['c_amount'])?$p_post_d['c_amount']:''; ?>">
 						</form>
 					</div>

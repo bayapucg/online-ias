@@ -36,9 +36,24 @@ class Home_model extends CI_Model
 	}
 	/* payment check */ 
 	public  function check_payment_details($id){
-		$this->db->select('p_id,c_id')->from('payment_details');
+		$this->db->select('p_d_id,p_id,c_id')->from('payment_details');
 		$this->db->where('c_id',$id);
 		return $this->db->get()->row_array();
+	}
+	
+	public  function get_videso_payment_list($id){		
+		$this->db->select('pd.p_id')->from('payment_details as pd');
+		$this->db->join('payments as p','p.p_id=pd.p_id','left');		
+		$this->db->where('pd.c_id',$id);
+        return $this->db->get()->result_array();
+	}
+	
+	public  function get_user_videos_list($pid){
+		$this->db->select('v_id,title,topic,teacher,video,org_video')->from('videos');
+		$this->db->where('type','Live');
+		$this->db->where('ptype',$pid);
+		$this->db->where('status',1);
+		return $this->db->get()->result_array();
 	}
 	
 	
