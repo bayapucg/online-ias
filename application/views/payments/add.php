@@ -1,11 +1,11 @@
 
 <div class="content-wrapper">
  <section class="content-header mb-4">
-      <h1> Add Video </h1>
+      <h1> Add Payment </h1>
       <ol class="breadcrumb">
          <li><a href="<?php echo base_url('dashboard'); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-         <li><a href="<?php echo base_url('video/index'); ?>"><i class="fa fa-list"></i> list</a></li>
-         <li class="active">Add Video</li>
+         <li><a href="<?php echo base_url('payments/index'); ?>"><i class="fa fa-list"></i> list</a></li>
+         <li class="active">Add Payment</li>
       </ol>
    </section>
    <section class="content">
@@ -16,40 +16,13 @@
               <h3 class="box-title">Add Video</h3>
             </div>
 			<div style="padding:20px;">
-			<form id="addemp" method="post"  action="<?php echo base_url('video/addpost'); ?>" enctype="multipart/form-data">
+			<form id="addemp" method="post"  action="<?php echo base_url('payments/addpost'); ?>" enctype="multipart/form-data">
 					<?php $csrf = array(
 						'name' => $this->security->get_csrf_token_name(),
 						'hash' => $this->security->get_csrf_hash()
 									); ?>
 					<input type="hidden" name="<?=$csrf['name'];?>" value="<?=$csrf['hash'];?>" />
 				
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class=" control-label">Payment Type </label>
-							<div class="">
-								<select class="form-control" name="ptype">
-								<option value="">select</option>
-								<?php if(isset($p_t_list) && count($p_t_list)>0){ ?>
-									<?php foreach($p_t_list as $li){ ?>
-										<option value="<?php echo $li['p_id']; ?>"><?php echo $li['title']; ?></option>
-									<?php } ?>
-								<?php } ?>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class=" control-label">TYpe </label>
-							<div class="">
-								<select class="form-control" name="type">
-								<option value="">select</option>
-								<option value="Live">Live</option>
-								<option value="demo">Demo</option>
-								</select>
-							</div>
-						</div>
-					</div>
 					<div class="col-md-6">
 						<div class="form-group">
 							<label class=" control-label">Title </label>
@@ -60,25 +33,33 @@
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<label class=" control-label">Topic</label>
+							<label class=" control-label">Description</label>
 							<div class="">
-								<input type="text" class="form-control" name="topic" placeholder="Enter Topic name" />
+								<input type="text" class="form-control" name="description" placeholder="Enter Description" />
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<label class=" control-label">Teacher </label>
+							<label class=" control-label">Amount</label>
 							<div class="">
-								<input type="text" class="form-control" name="teacher" placeholder="Enter Teacher name" />
+								<input type="text" class="form-control" name="amt" placeholder="Enter Amount" />
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<label class=" control-label">Video </label>
+							<label class=" control-label">Promo Code </label>
 							<div class="">
-								<input type="file" class="form-control" name="video" placeholder="Enter Teacher name" />
+								<input type="text" class="form-control" name="promo" placeholder="Enter Promo Code" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class=" control-label">Promo Code Amount</label>
+							<div class="">
+								<input type="text" class="form-control" name="promo_amt" placeholder="Enter Promo Code Amount" />
 							</div>
 						</div>
 					</div>
@@ -109,12 +90,6 @@ $(document).ready(function() {
                 validators: {
                     notEmpty: {
                         message: 'Title is required'
-                    }
-                }
-            }, ptype: {
-                validators: {
-                    notEmpty: {
-                        message: 'Payment Type  is required'
                     }
                 }
             },type: {

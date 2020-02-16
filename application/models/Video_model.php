@@ -13,18 +13,18 @@ class Video_model extends CI_Model
 	}
 	
 	public  function get_video_details($id){
-		$this->db->select('v_id,type,title,topic,teacher,video,org_video,status,created_at')->from('videos');
+		$this->db->select('v_id,type,title,topic,teacher,video,org_video,status,created_at,ptype')->from('videos');
 		$this->db->where('v_id',$id);
 		return $this->db->get()->row_array();
 	}
 	public  function get_video_list($id){
-		$this->db->select('v_id,type,title,topic,teacher,video,org_video,status,created_at')->from('videos');
+		$this->db->select('v_id,type,title,topic,teacher,video,org_video,status,created_at,ptype')->from('videos');
 		$this->db->where('created_by',$id);
 		$this->db->where('status !=',2);
 		return $this->db->get()->result_array();
 	}
 	public  function get_active_video_list(){
-		$this->db->select('v_id,title,type,topic,teacher,video,org_video,status,created_at')->from('videos');
+		$this->db->select('v_id,title,type,topic,teacher,video,org_video,status,created_at,ptype')->from('videos');
 		$this->db->where('status',1);
 		return $this->db->get()->result_array();
 	}	
@@ -42,6 +42,11 @@ class Video_model extends CI_Model
 		$this->db->select('*')->from('customers');
 		$this->db->where('status',1);
 		return $this->db->get()->result_array();
+	}
+	public  function get_payment_list(){
+		$this->db->select('*')->from('payments');		
+		$this->db->where('status',1);
+        return $this->db->get()->result_array();
 	}
 
 }

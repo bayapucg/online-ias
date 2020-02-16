@@ -74,10 +74,10 @@ class User extends CI_Controller {
 				$save=$this->User_model->save_user($ad);
 				if(count($save)>0){
 					$c_d=$this->User_model->get_basic_customer_data($save);
-					echo '<pre>';print_r($c_d);exit;
+					//echo '<pre>';print_r($c_d);exit;
 					$this->session->set_userdata('rs_d',$c_d);
 					$this->session->set_flashdata('success',"Registered successfully");
-					redirect('dashboard');
+					redirect('profile');
 				}else{
 					$this->session->set_flashdata('error',"Technical problem will occured. Please try again");
 					redirect('user');

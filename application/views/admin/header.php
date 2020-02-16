@@ -130,13 +130,29 @@
           </a>
           <ul class="treeview-menu" style="display: none;">
             <li>
-              <a href="<?php echo base_url('video/add'); ?>">Add 
+              <a href="<?php echo base_url('payments/add'); ?>">Add 
                 
               </a>
             </li>
-            <li><a href="<?php echo base_url('video/index'); ?>">List</a></li>
+            <li><a href="<?php echo base_url('payments/index'); ?>">List</a></li>
             
           </ul>
+        </li>
+		<li class="treeview">
+          <a href="<?php echo base_url('profiles/userlist'); ?>">
+            <i class="fa fa-users"></i> <span>User List</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+        </li>
+		<li class="treeview">
+          <a href="<?php echo base_url('profiles/paymentuserlist'); ?>">
+            <i class="fa fa-users"></i> <span>Payment User List</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
         </li>
 		    
       </ul>

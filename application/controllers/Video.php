@@ -29,7 +29,8 @@ class Video extends sidebar {
 			{
 				$l_data=$this->session->userdata('sai_f');
 				$cid=base64_decode($this->uri->segment(3));				
-				$data['v_d']=$this->Video_model->get_video_details($cid);	
+				$data['v_d']=$this->Video_model->get_video_details($cid);
+				$data['p_t_list']=$this->Video_model->get_payment_list();					
 				//echo '<pre>';print_r($data);exit;
 				$this->load->view('video/edit',$data);
 				$this->load->view('admin/footer');
@@ -61,7 +62,8 @@ class Video extends sidebar {
 		if($this->session->userdata('sai_f'))
 			{
 				$l_data=$this->session->userdata('sai_f');
-				$this->load->view('video/add');
+				$data['p_t_list']=$this->Video_model->get_payment_list();
+				$this->load->view('video/add',$data);
 				$this->load->view('admin/footer');
 				$this->load->view('admin/footer-links');
 			}else{
@@ -82,6 +84,7 @@ class Video extends sidebar {
 					move_uploaded_file($_FILES['video']['tmp_name'], "assets/video/" . $video);
 				}				
 				$ad=array(
+					'ptype'=>isset($post['ptype'])?$post['ptype']:'',
 					'type'=>isset($post['type'])?$post['type']:'',
 					'title'=>isset($post['title'])?$post['title']:'',
 					'topic'=>isset($post['topic'])?$post['topic']:'',
@@ -122,6 +125,7 @@ class Video extends sidebar {
 					$org_video=$s_d['org_video'];
 				}
 			$ud=array(
+				'ptype'=>isset($post['ptype'])?$post['ptype']:'',
 				'title'=>isset($post['title'])?$post['title']:'',
 				'type'=>isset($post['type'])?$post['type']:'',
 				'topic'=>isset($post['topic'])?$post['topic']:'',

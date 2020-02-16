@@ -1,11 +1,11 @@
 
 <div class="content-wrapper">
  <section class="content-header mb-4">
-      <h1> Edit Video </h1>
+      <h1> Edit Payment </h1>
       <ol class="breadcrumb">
          <li><a href="<?php echo base_url('dashboard'); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-         <li><a href="<?php echo base_url('video/index'); ?>"><i class="fa fa-list"></i> list</a></li>
-         <li class="active">Edit Video</li>
+         <li><a href="<?php echo base_url('payments/index'); ?>"><i class="fa fa-list"></i> list</a></li>
+         <li class="active">Edit Payment</li>
       </ol>
    </section>
    <section class="content">
@@ -13,77 +13,54 @@
         <div class="col-md-12">
           <div class="box box-primary">
             <div class="box-header with-border">
-              <h3 class="box-title">Edit Video
-			  </h3>
+              <h3 class="box-title">Edit Video</h3>
             </div>
 			<div style="padding:20px;">
-			<form id="addemp" method="post"  action="<?php echo base_url('video/editpost'); ?>" enctype="multipart/form-data">
-			<?php $csrf = array(
+			<form id="addemp" method="post"  action="<?php echo base_url('payments/editpost'); ?>" enctype="multipart/form-data">
+					<?php $csrf = array(
 						'name' => $this->security->get_csrf_token_name(),
 						'hash' => $this->security->get_csrf_hash()
 									); ?>
-			<input type="hidden" name="<?=$csrf['name'];?>" value="<?=$csrf['hash'];?>" />
-			<input type="hidden" name="v_id" value="<?php echo isset($v_d['v_id'])?$v_d['v_id']:''; ?>">
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class=" control-label">Payment Type </label>
-							<div class="">
-								<select class="form-control" name="ptype">
-								<option value="">select</option>
-								<?php if(isset($p_t_list) && count($p_t_list)>0){ ?>
-									<?php foreach($p_t_list as $li){ ?>
-										<?php if($li['p_id']==$v_d['ptype']){ ?>
-											<option selected value="<?php echo $li['p_id']; ?>"><?php echo $li['title']; ?></option>
-										<?php }else{ ?>
-										<option value="<?php echo $li['p_id']; ?>"><?php echo $li['title']; ?></option>
-										<?php } ?>
-									<?php } ?>
-								<?php } ?>
-								</select>
-							</div>
-						</div>
-					</div>
-					<div class="col-md-6">
-						<div class="form-group">
-							<label class=" control-label">TYpe </label>
-							<div class="">
-								<select class="form-control" name="type">
-								<option value="">select</option>
-								<option value="Live" <?php if($v_d['type']=='Live'){ echo "selected";} ?>>Live</option>
-								<option value="demo" <?php if($v_d['type']=='demo'){ echo "selected";} ?>>Demo</option>
-								</select>
-							</div>
-						</div>
-					</div>
+					<input type="hidden" name="<?=$csrf['name'];?>" value="<?=$csrf['hash'];?>" />
+					<input type="hidden" name="p_id" value="<?php echo isset($p_de['p_id'])?$p_de['p_id']:''; ?>" />
+				
 					<div class="col-md-6">
 						<div class="form-group">
 							<label class=" control-label">Title </label>
 							<div class="">
-								<input type="text" class="form-control" name="title" value="<?php echo isset($v_d['title'])?$v_d['title']:''; ?>" placeholder="Enter Title name" />
+								<input type="text" class="form-control" name="title" value="<?php echo isset($p_de['title'])?$p_de['title']:''; ?>" placeholder="Enter Title name" />
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<label class=" control-label">Topic</label>
+							<label class=" control-label">Description</label>
 							<div class="">
-								<input type="text" class="form-control" name="topic" value="<?php echo isset($v_d['topic'])?$v_d['topic']:''; ?>" placeholder="Enter Topic name" />
+								<input type="text" class="form-control" name="description" value="<?php echo isset($p_de['description'])?$p_de['description']:''; ?>" placeholder="Enter Description" />
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<label class=" control-label">Teacher </label>
+							<label class=" control-label">Amount</label>
 							<div class="">
-								<input type="text" class="form-control" name="teacher" value="<?php echo isset($v_d['teacher'])?$v_d['teacher']:''; ?>" placeholder="Enter Teacher name" />
+								<input type="text" class="form-control" name="amt" value="<?php echo isset($p_de['amt'])?$p_de['amt']:''; ?>" placeholder="Enter Amount" />
 							</div>
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div class="form-group">
-							<label class=" control-label">Video </label>
+							<label class=" control-label">Promo Code </label>
 							<div class="">
-								<input type="file" class="form-control" name="video" placeholder="Enter Teacher name" />
+								<input type="text" class="form-control" name="promo" value="<?php echo isset($p_de['promo'])?$p_de['promo']:''; ?>" placeholder="Enter Promo Code" />
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="form-group">
+							<label class=" control-label">Promo Code Amount</label>
+							<div class="">
+								<input type="text" class="form-control" name="promo_amt" value="<?php echo isset($p_de['promo_amt'])?$p_de['promo_amt']:''; ?>" placeholder="Enter Promo Code Amount" />
 							</div>
 						</div>
 					</div>
@@ -116,6 +93,12 @@ $(document).ready(function() {
                         message: 'Title is required'
                     }
                 }
+            },type: {
+                validators: {
+                    notEmpty: {
+                        message: 'type is required'
+                    }
+                }
             },topic: {
                 validators: {
                     notEmpty: {
@@ -130,7 +113,9 @@ $(document).ready(function() {
                 }
             },video: {
                 validators: {
-					
+					notEmpty: {
+                        message: 'Video is required'
+                    },
 					regexp: {
 					regexp: "(.*?)\.(mp4|Mp4|MP4)$",
 					message: 'Uploaded file is not a valid. Only mp4 file are allowed'
@@ -142,4 +127,3 @@ $(document).ready(function() {
 
 });
 </script>
-

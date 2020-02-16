@@ -16,53 +16,42 @@ class Payment extends Frontend {
 		$this->load->helper('directory');
 		$this->load->helper('security');
 		$this->load->model('Payment_model');
-		//https://github.com/razorpay/razorpay-php
 		}
 	public function index()
-	{
-		//$api = new RazorpayApi('your_api_key_here', 'your_api_secret_here');
-		$api_id= $this->config->item('keyId');
-		$api_Secret= $this->config->item('API_keySecret');
-		$api = new RazorpayApi($api_id,$api_Secret);
-		echo '<pre>';print_r($api);exit;
-		//$api = new RazorpayApi($this->config->load('keyId'), $this->config->load('API_keySecret'));
-		$orderData = [
-				'receipt'         => 3456,
-				'amount'          => 20 * 100, // 2000 rupees in paise
-				'currency'        => 'INR',
-				'payment_capture' => 1 // auto capture
-		];
-
-	$razorpayOrder = $api->order->create($orderData);
-	$razorpayOrderId = $razorpayOrder['id'];
-	$displayAmount = $amount = $orderData['amount'];
-	$refund = $api->refund->create(array('payment_id' => $razorpayOrderId));
-	$displayCurrency=$orderData['currency'];
-	$data['details'] = [
-						"key"               => $api_id,
-						"amount"            => $amount,
-						"name"              => "vasudevareddy",
-						"description"       => "Activate for cloud account",
-						"image"             => "",
-						"prefill"           => [
-						"name"              => "vasudevareddy reddem",
-						"email"             => "vasudevareddy@prachatech.com",
-						"contact"           => "8500050944",
-						],
-						"notes"             => [
-						"address"           => "kukatpalli",
-						"merchant_order_id" => "12312321",
-						],
-						"theme"             => [
-						"color"             => "#F37254"
-						],
-						"order_id"          => $razorpayOrderId,
-						"display_currency"          => $orderData['currency'],
-		];
-		
-			$this->load->view('payment/pay',$data);
+	{	
+		if($this->session->userdata('rs_d'))
+			{
+					$cd=$this->session->userdata('rs_d');
+					$data['p_list']=$this->Payment_model->get_active_payment_list();
+					//echo '<pre>';print_r($data);exit;
+					$this->load->view('html/payment_list',$data);
+					$this->load->view('html/footer');
+					$this->load->view('html/footer-links');
+			}else{
+				$this->session->set_flashdata('error',"Please log in or sign up to continue");
+				redirect('user');
+			}
 	}
-	
+	public function details()
+	{	
+		if($this->session->userdata('rs_d'))
+			{
+					$cd=$this->session->userdata('rs_d');
+					$pid=base64_decode($this->uri->segment(3));
+					if($pid==''){
+						$this->session->set_flashdata('error',"Technical problem will occured. Please try again");
+						redirect('payment/index');
+					}
+					$data['p_d']=$this->Payment_model->get_payment_details($pid);
+					//echo '<pre>';print_r($data);exit;
+					$this->load->view('html/payment_details',$data);
+					$this->load->view('html/footer');
+					$this->load->view('html/footer-links');
+			}else{
+				$this->session->set_flashdata('error',"Please log in or sign up to continue");
+				redirect('user');
+			}
+	}	
 	public  function success(){
 		if($this->session->userdata('userdetails'))
 		{

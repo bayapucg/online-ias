@@ -2,12 +2,12 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-       Videos List
+       Payments List
       </h1>
       <ol class="breadcrumb">
         <li><a href="<?php echo base_url('dashboard'); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="<?php echo base_url('video/add'); ?>"><i class="fa fa-plus"></i> Add</a></li>
-        <li class="active">Videos List</li>
+        <li><a href="<?php echo base_url('payments/add'); ?>"><i class="fa fa-plus"></i> Add</a></li>
+        <li class="active">Payments List</li>
       </ol>
     </section>
 
@@ -19,37 +19,31 @@
               <table id="example1" class="table table-bordered table-striped">
                 <thead>
                 <tr>
-                  <th>Type</th>
-                  <th>Topic</th>
-                  <th>Topic</th>
-                  <th>Teacher</th>
-                  <th>Video</th>
+                  <th>Title</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                  <th>Promo Code</th>
+                  <th>Promo Code Amount</th>
 				  <th>Created Date & Time</th>				  
                   <th>Status</th>				  
 				  <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
-				<?php if(isset($v_list) && count($v_list)>0){ ?>
-					<?php foreach($v_list as $li){ ?>
+				<?php if(isset($pay_l) && count($pay_l)>0){ ?>
+					<?php foreach($pay_l as $li){ ?>
 					<tr>
-					  <td><?php echo isset($li['type'])?$li['type']:''; ?></td>
 					  <td><?php echo isset($li['title'])?$li['title']:''; ?></td>
-					  <td><?php echo isset($li['topic'])?$li['topic']:''; ?></td>
-					  <td><?php echo isset($li['teacher'])?$li['teacher']:''; ?></td>
-					  <td>
-					  <?php if($li['video']!='') { ?>
-						<video width="30%" height="10%" class="thumbnail">
-							<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/mp4">
-						</video>
-					  <?php } ?>
-					  </td>
+					  <td><?php echo isset($li['description'])?$li['description']:''; ?></td>
+					  <td><?php echo isset($li['amt'])?$li['amt']:''; ?></td>
+					  <td><?php echo isset($li['promo'])?$li['promo']:''; ?></td>
+					  <td><?php echo isset($li['promo_amt'])?$li['promo_amt']:''; ?></td>
 					  <td><?php echo isset($li['created_at'])?date("d-m-Y H:i:s", strtotime($li['created_at'])):''; ?></td>
 					  <td><?php if($li['status']==1){ echo "Active";}else{ echo "Deactive"; } ?></td>
 					 <td> 
-						<a href="<?php echo base_url('video/status/'.base64_encode($li['v_id']).'/'.base64_encode($li['status'])); ?>" class="confirmation"><i class="fa fa-pencil btn btn-success"></i></a>
-						<a href="<?php echo base_url('video/edit/'.base64_encode($li['v_id'])); ?>"  data-toggle="tooltip" title="Edit"><i class="fa fa-edit btn btn-warning"></i></a>
-						<a href="<?php echo base_url('video/delete/'.base64_encode($li['v_id'])); ?>" data-toggle="tooltip" title="Delete" class="confirmation"><i class="fa fa-trash btn btn-danger"></i></a>
+						<a href="<?php echo base_url('payments/status/'.base64_encode($li['p_id']).'/'.base64_encode($li['status'])); ?>" class="confirmation"><i class="fa fa-pencil btn btn-success"></i></a>
+						<a href="<?php echo base_url('payments/edit/'.base64_encode($li['p_id'])); ?>"  data-toggle="tooltip" title="Edit"><i class="fa fa-edit btn btn-warning"></i></a>
+						<a href="<?php echo base_url('payments/delete/'.base64_encode($li['p_id'])); ?>" data-toggle="tooltip" title="Delete" class="confirmation"><i class="fa fa-trash btn btn-danger"></i></a>
 						
 					 </td>
 					</tr>
@@ -60,11 +54,11 @@
                 </tbody>
                 <tfoot>
                 <tr>
-				 <th>Type</th>
-				 <th>Title</th>
-                  <th>Topic</th>
-                  <th>Teacher</th>
-                  <th>Video</th>
+				  <th>Title</th>
+                  <th>Description</th>
+                  <th>Amount</th>
+                  <th>Promo Code</th>
+                  <th>Promo Code Amount</th>
 				  <th>Created Date & Time</th>				  
                   <th>Status</th>				  
 				  <th>Action</th>

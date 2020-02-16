@@ -40,6 +40,22 @@ class Profiles extends sidebar {
 			redirect('admin');
 		}
 	}
+	public function userlist()
+	{
+		if($this->session->userdata('sai_f'))
+		{
+				$l_data=$this->session->userdata('sai_f');
+				$data['u_list']=$this->Admin_model->get_register_user_list();
+				//echo '<pre>';print_r($data);exit;
+				$this->load->view('admin/userlist',$data);
+				$this->load->view('admin/footer');
+				$this->load->view('admin/footer-links');
+
+		}else{
+			$this->session->set_flashdata('loginerror','Please login to continue');
+			redirect('admin');
+		}
+	}
 	public function editpost()
 	{
 		if($this->session->userdata('sai_f'))

@@ -22,12 +22,7 @@ class Videos extends Frontend {
 					$this->load->view('html/footer');
 					$this->load->view('html/footer-links');
 				}else{
-					$data['video_list']=$this->Home_model->get_online_videos();
-					//echo '<pre>';print_r($check);exit;
-					$this->load->view('html/all-saved-videos',$data);
-					$this->load->view('html/footer');
-					$this->load->view('html/footer-links');
-					//redirect('payment');
+					redirect('payment');
 				}
 				
 		}else{
