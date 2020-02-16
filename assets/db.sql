@@ -114,18 +114,24 @@ insert  into `home_banners`(`b_id`,`title`,`image`,`org_image`,`status`,`create_
 DROP TABLE IF EXISTS `payment_details`;
 
 CREATE TABLE `payment_details` (
-  `p_id` int(11) NOT NULL AUTO_INCREMENT,
+  `p_d_id` int(11) NOT NULL AUTO_INCREMENT,
   `c_id` int(11) DEFAULT NULL,
+  `p_id` int(11) DEFAULT NULL,
+  `total_amt` varchar(250) DEFAULT NULL,
+  `paid_amt` varchar(250) DEFAULT NULL,
+  `coupon_code` varchar(250) DEFAULT NULL,
   `razorpay_payment_id` varchar(250) DEFAULT NULL,
   `razorpay_order_id` varchar(250) DEFAULT NULL,
   `razorpay_signature` varchar(250) DEFAULT NULL,
   `status` int(11) DEFAULT '1',
-  `creayed_at` datetime DEFAULT NULL,
+  `created_at` datetime DEFAULT NULL,
   `created_by` int(11) DEFAULT NULL,
-  PRIMARY KEY (`p_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  PRIMARY KEY (`p_d_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
 
 /*Data for the table `payment_details` */
+
+insert  into `payment_details`(`p_d_id`,`c_id`,`p_id`,`total_amt`,`paid_amt`,`coupon_code`,`razorpay_payment_id`,`razorpay_order_id`,`razorpay_signature`,`status`,`created_at`,`created_by`) values (1,17,1,'12000','10000','2000','pay_EHUzzSNxwnHkrp','','',1,'2020-02-16 23:06:42',17);
 
 /*Table structure for table `payments` */
 
@@ -327,7 +333,7 @@ CREATE TABLE `videos` (
 
 /*Data for the table `videos` */
 
-insert  into `videos`(`v_id`,`ptype`,`type`,`title`,`topic`,`teacher`,`video`,`org_video`,`status`,`created_at`,`updated_at`,`created_by`) values (5,1,'demo','Best online IAS Academy','Testing','Vasudevareddy','1581685660.mp4','class1.mp4',1,'2020-02-14 18:37:40','2020-02-16 19:21:28',3),(6,1,'demo','Class 1','Class 1','Class 1','1581685714.mp4','class1.mp4',1,'2020-02-14 18:38:33','2020-02-16 19:21:39',3),(7,1,'demo','Class 1','Class 1','Class 1','1581685730.mp4','class1.mp4',1,'2020-02-14 18:38:49','2020-02-16 19:21:48',3),(8,1,'demo','Class 1','Class 1','Class 1','1581685744.mp4','class1.mp4',1,'2020-02-14 18:39:03','2020-02-16 19:22:00',3),(10,1,'Live','Best online IAS Academy','Class 1','Vasudevareddy','1581687460.mp4','class1.mp4',1,'2020-02-14 19:07:39','2020-02-16 19:22:06',3);
+insert  into `videos`(`v_id`,`ptype`,`type`,`title`,`topic`,`teacher`,`video`,`org_video`,`status`,`created_at`,`updated_at`,`created_by`) values (5,1,'demo','Best online IAS Academy','Testing','Vasudevareddy','1581685660.mp4','class1.mp4',1,'2020-02-14 18:37:40','2020-02-16 19:21:28',3),(6,1,'demo','Class 1','Class 1','Class 1','1581685714.mp4','class1.mp4',1,'2020-02-14 18:38:33','2020-02-16 19:21:39',3),(7,1,'demo','Class 1','Class 1','Class 1','1581685730.mp4','class1.mp4',1,'2020-02-14 18:38:49','2020-02-16 19:21:48',3),(8,1,'Live','Class 1','Class 1','Class 1','1581685744.mp4','class1.mp4',1,'2020-02-14 18:39:03','2020-02-16 19:22:00',3),(10,1,'Live','Best online IAS Academy','Class 1','Vasudevareddy','1581687460.mp4','class1.mp4',1,'2020-02-14 19:07:39','2020-02-16 19:22:06',3);
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
