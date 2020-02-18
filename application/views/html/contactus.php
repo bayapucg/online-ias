@@ -9,7 +9,7 @@
 					<div class="col-md-12">
 						<header class="section-header">
 						  <h3>Contact Us</h3>
-						  <p class="text-left">Give us a ring to speak to a member of our team in the strictest confidence. Or you can fill out our contact form and we'll ring you back. 087 12 12 39 67 Our phone lines are open 24/7, 365 days a year</p>
+						  <p class="text-left">The founder and faculty Mr. Surya Kiran is a post graduate in Political Science, Public Administration and Business Administration</p>
 						</header>
 						
 					</div>

@@ -11,14 +11,16 @@
    
           <div class="panel panel-info">
           
-            <div class="panel-body">
+            <div class="panel-body ">
               <div class="row justify-content-center d-flex">
 			  
-               <div class=" col-md-8 card py-4 "> 
-				  <h2 class="text-center">Success page</h2>
-
+               <div class=" col-md-6 card py-4 mt-5 mb-5">
+			<div style="margin:0 auto;">			   
+			   <img style="width:80px;height:80px;" src="<?php echo base_url(); ?>assets/design/img/suc.gif">
+			</div>
+				  <h2 class="text-center text-success">Payment successfully completed </h2>
 	<div class="container-fluid">
-	Payment successfully completed 
+
 	<table class="table table-user-information">
 					<tbody>
 						<tr>

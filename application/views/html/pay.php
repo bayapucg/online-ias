@@ -2,10 +2,10 @@
 	.razorpay-payment-button{
 		 background:#192f5d;
 		 color:#fff;
-		 padding:9px;
+		 padding:7px;
 		 border:none;
 		 border-radius:3px;
-		 margin-top:5px;
+		 margin-top:0px;
 		 
 	 }
 	 table {
@@ -83,9 +83,9 @@ table, td, th {
 			</div>
 			<div class="container">
 				<div class="row justify-content-md-center">
-					<div class="col-md-3">	<a href="<?php echo base_url('payment/index'); ?>" class="btn btn-warning">Edit</a>
+					<div class="col-md-3">	<a href="<?php echo base_url('payment/index'); ?>" class="btn btn-warning text-white">Edit</a>
 					</div>
-					<div class="col-md-3">
+					<div class="col-md-3 pull-right">
 						<form id="paymentform" name="paymentform" action="<?php echo base_url('payment/successpost'); ?>" method="POST">
 						<?php $csrf = array(
 						'name' => $this->security->get_csrf_token_name(),

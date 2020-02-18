@@ -5,7 +5,7 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>Online IAS Academy</h3>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s </p>
+            <p>The founder and faculty Mr. Surya Kiran is a post graduate in Political Science, Public Administration and Business Administration </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -22,7 +22,7 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s<br>
+              H.N.O.1-9-295/3,Vittal Nagar,Ram Nagar Gundu Vidhya Nagar,Hyderabad, pin 500044<br>
               <strong>Phone:</strong> +91 9963173255<br>
               <strong>Email:</strong> info@onlineiasacademy.com/<br>
             </p>

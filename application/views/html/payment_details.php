@@ -12,11 +12,12 @@
           <div class="panel panel-info">
           
             <div class="panel-body">
+			 <form action="<?php echo base_url('payment/confirmation'); ?>" method="POST">
               <div class="row justify-content-center d-flex">
-			  <form action="<?php echo base_url('payment/confirmation'); ?>" method="POST">
+			 
 			  <input type="hidden" id="c_amount" name="c_amount" value="">
 			  <input type="hidden" id="p_id" name="p_id" value="<?php echo isset($p_d['p_id'])?$p_d['p_id']:''; ?>">
-               <div class=" col-md-8 card py-4"> 
+               <div class=" col-md-6 card py-4"> 
 				 <table class="table table-user-information">
 					<tbody>
                       <tr>
@@ -33,21 +34,26 @@
                       </tr>
 					  <tr>
                         <td>Promo Code</td>
-                        <td>
+                        <td >
 						<input type="text" class="form-control" name="p_code" id="p_code" value="">
 						<span id="c_s_msg"></span>
-						<button class="btn btn-warning" id="c_apply_id" type="button" onclick="apply_p_code();">Apply</button>
+						
 						</td>
+						
+                      </tr> 
+					  <tr>
+                      
                       </tr>
 					  
                     </tbody>
                   </table>
-                  
+                  	<button type="submit" class="btn btn-primary btn-xs">Submit</button>
                 </div>
-				<button type="submit" class="btn btn-primary">Submit</button>
-				</form>
+			
+				
 				<div class="clearfix">&nbsp;</div>
               </div>
+			  </form>
             </div>
                 
             

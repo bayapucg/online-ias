@@ -5,7 +5,7 @@
 
         <header class="section-header">
           <h3>About Us</h3>
-          <p class="text-left">Lorem ipsum dolor sit amet, ut suspendisse pede pellentesque ipsum justo, tortor viverra lectus, aliquet phasellus egestas sodales risus arcu est, penatibus fringilla eu. Urna et dicta ligula justo adipiscing quis, hendrerit volutpat amet sodales urna ipsum, purus fusce vivamus vehicula, massa sodales quis nulla nascetur vel. Neque vivamus urna vel ante ipsum, nisl arcu lectus sit molestie, eu eu eget lobortis. Sollicitudin nec ultrices laoreet at, ultrices odio pellentesque felis egestas pharetra ultrices, nec nulla, purus nec aliquam nulla, eu voluptas pellentesque. Malesuada dignissim cras, lorem velit eu magna tristique, in dolor pede, at lacus vel magnis varius vestibulum eros. Dis dolor imperdiet porta blandit in, vitae lorem leo habitant, nec posuere nisl morbi, id adipiscing imperdiet. Malesuada vitae, sit a cum non massa pretium, porttitor at mattis ut placerat lacinia, magna sed, vestibulum vestibulum sed eros purus enim.</p>
+          <p class="text-left">Online IAS Academy was founded in the year 2019 with a vision to reach millions of Civil Service aspirants all over India especially with optional subjects Political Science and International Relations.</p>
         </header>
 		</div>
     </section>
@@ -14,8 +14,8 @@
 	<section id="team">
 		<div class="container"> 
 			 <header class="section-header">
-          <h3>Why Choose Us?</h3>
-          <p class="text-left">Velit turpis magna nulla mauris purus, parturient nec ante nullam bibendum sodales. Justo tincidunt est donec, risus mauris, sed sit vestibulum mus lectus magna porta, sit vehicula eros lacus nulla faucibus, vitae sodales. Porta enim etiam, mauris pede mus arcu odio dapibus odio, massa euismod. Amet nulla pellentesque gravida duis. Condimentum leo enim, bibendum metus. Luctus convallis diam a cursus. Nam ornare fusce, sapien in vel vel quis inceptos. Nec nunc gravida purus libero, nostrud egestas mi, nibh donec fermentum at nec et eu, sit mauris sit pellentesque donec donec eros. Eu tincidunt integer urna diam curae, dolor mauris, aliquam pulvinar accumsan est dolor convallis, suspendisse nullam sociis at duis</p>
+          <h3>Founder</h3>
+          <p class="text-left">The founder and faculty Mr. Surya Kiran is a post graduate in Political Science, Public Administration and Business Administration and also an aspirant who qualified for interview twice, has evolved over the years with a successful track record of helping hundreds of aspirants in achieving their dreams of becoming bureaucrats and guiding many others to realize their potential. Having vast experience in teaching Political Science and International Relations at various institutions throughout Telangana and Andhra Pradesh now desired to reach thousands of aspirants through our online classes. </p>
         </header>
 		</div>
 	</section>
