@@ -26,12 +26,12 @@
 					<form action="<?php echo base_url('contactus/post'); ?>" method="POST">
 						<div class="form-group">
 								<div class="">
-									<input type="text" class="form-control" name="name" placeholder="Enter Your Full Name" />
+									<input type="text" class="form-control" required name="name" placeholder="Enter Your Full Name" />
 								</div>
 						</div>
 						<div class="form-group">
 								<div class="">
-									<input type="text" class="form-control" name="mobile" maxlength="10" placeholder="Enter Mobile No" />
+									<input type="text" class="form-control" required name="mobile" maxlength="10" placeholder="Enter Mobile No" />
 								</div>
 						</div>
 						<div class="form-group">
@@ -41,12 +41,12 @@
 						</div>
 						<div class="form-group">
 								<div class="">
-									<input type="text" class="form-control" name="subject" placeholder="Enter Subject" />
+									<input type="text" class="form-control" required name="subject" placeholder="Enter Subject" />
 								</div>
 						</div>
 						<div class="form-group">
 								<div class="">
-									<textarea class="form-control" name="msg" required> Enter Comment</textarea>
+									<textarea class="form-control" required name="msg" required placeholder=" Enter Comment"></textarea>
 								</div>
 						</div>
 						<div class="form-group">

@@ -12,7 +12,7 @@
           <div class="panel panel-info">
           
             <div class="panel-body">
-			 <form action="<?php echo base_url('payment/confirmation'); ?>" method="POST">
+			 <form autocomplete="off" action="<?php echo base_url('payment/confirmation'); ?>" method="POST">
               <div class="row justify-content-center d-flex">
 			 
 			  <input type="hidden" id="c_amount" name="c_amount" value="">
@@ -34,11 +34,14 @@
                       </tr>
 					  <tr>
                         <td>Promo Code</td>
-                        <td >
+						<div class="row">
+                        <td>
 						<input type="text" class="form-control" name="p_code" id="p_code" value="">
+						<button class="btn btn-warning" id="c_apply_id" type="button" onclick="apply_p_code();">Apply</button>
 						<span id="c_s_msg"></span>
 						
 						</td>
+						</div>
 						
                       </tr> 
 					  <tr>
@@ -81,6 +84,9 @@ function apply_p_code(){
 						$("#c_amount").empty();
 						$("#c_amount").val(data.c_amount);
 						$("#c_apply_id").hide();
+						}else{
+							$("#c_s_msg").empty();
+							$("#c_s_msg").append('Promo code invalid. Please try again');
 						}
 				
 				}
