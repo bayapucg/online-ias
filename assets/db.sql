@@ -58,11 +58,11 @@ CREATE TABLE `contactus` (
   `msg` longtext,
   `created_at` datetime DEFAULT NULL,
   PRIMARY KEY (`c_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 /*Data for the table `contactus` */
 
-insert  into `contactus`(`c_id`,`name`,`mobile`,`email`,`subject`,`msg`,`created_at`) values (1,'chinna','8500050944','admin@gmail.com','','testing','2020-02-14 15:39:13');
+insert  into `contactus`(`c_id`,`name`,`mobile`,`email`,`subject`,`msg`,`created_at`) values (1,'chinna','8500050944','admin@gmail.com','','testing','2020-02-14 15:39:13'),(2,'','','','',' Enter Comment','2020-02-18 09:17:15');
 
 /*Table structure for table `customers` */
 
@@ -83,11 +83,11 @@ CREATE TABLE `customers` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `user_login` int(11) DEFAULT '0',
   PRIMARY KEY (`c_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=latin1;
 
 /*Data for the table `customers` */
 
-insert  into `customers`(`c_id`,`role`,`name`,`email`,`pwd`,`mobile`,`address`,`org_pwd`,`p_pic`,`status`,`created_at`,`updated_at`,`user_login`) values (11,'2','Vasu','vasu@gmail.com','e10adc3949ba59abbe56e057f20f883e','8500050944','kadapa ','123456','1575113478.jpg',1,'2019-11-30 17:38:13','2019-11-30 17:38:13',0),(14,'2','Breading Rams','bb@gmail.com','e10adc3949ba59abbe56e057f20f883e','1234567890','Testing','123456','1581665183.png',1,'2020-02-14 16:08:12','2020-02-14 16:08:12',0),(15,'2','ddd','bbb@gmail.com','e10adc3949ba59abbe56e057f20f883e','8527412365',NULL,'123456',NULL,1,'2020-02-16 18:27:34','0000-00-00 00:00:00',0),(16,'2','bbbbb','bcnc@gmail.com','e10adc3949ba59abbe56e057f20f883e','6547123333',NULL,'123456',NULL,1,'2020-02-16 18:28:27','0000-00-00 00:00:00',0),(17,'2','cvnxb','bxmncbnxbc@gmail.com','e10adc3949ba59abbe56e057f20f883e','98745632112',NULL,'123456',NULL,1,'2020-02-16 18:29:22','0000-00-00 00:00:00',0);
+insert  into `customers`(`c_id`,`role`,`name`,`email`,`pwd`,`mobile`,`address`,`org_pwd`,`p_pic`,`status`,`created_at`,`updated_at`,`user_login`) values (11,'2','Vasu','vasu@gmail.com','e10adc3949ba59abbe56e057f20f883e','8500050944','kadapa ','123456','1575113478.jpg',1,'2019-11-30 17:38:13','2019-11-30 17:38:13',0),(14,'2','Breading Rams','bb@gmail.com','e10adc3949ba59abbe56e057f20f883e','1234567890','Testing','123456','1581665183.png',1,'2020-02-14 16:08:12','2020-02-14 16:08:12',0),(15,'2','ddd','bbb@gmail.com','e10adc3949ba59abbe56e057f20f883e','8527412365',NULL,'123456',NULL,1,'2020-02-16 18:27:34','0000-00-00 00:00:00',0),(16,'2','bbbbb','bcnc@gmail.com','e10adc3949ba59abbe56e057f20f883e','6547123333','','123456','1581997952.png',1,'2020-02-18 09:22:31','2020-02-18 09:22:31',0),(17,'2','cvnxb','bxmncbnxbc@gmail.com','e10adc3949ba59abbe56e057f20f883e','98745632112',NULL,'123456',NULL,1,'2020-02-16 18:29:22','0000-00-00 00:00:00',0),(18,'2','ccc','cc@gmail.com','e10adc3949ba59abbe56e057f20f883e','9874587458',NULL,'123456',NULL,1,'2020-02-19 11:35:00','0000-00-00 00:00:00',0);
 
 /*Table structure for table `home_banners` */
 
@@ -95,6 +95,7 @@ DROP TABLE IF EXISTS `home_banners`;
 
 CREATE TABLE `home_banners` (
   `b_id` int(11) NOT NULL AUTO_INCREMENT,
+  `subtitle` varchar(250) DEFAULT NULL,
   `title` text,
   `image` varchar(250) DEFAULT NULL,
   `org_image` varchar(250) DEFAULT NULL,
@@ -107,7 +108,7 @@ CREATE TABLE `home_banners` (
 
 /*Data for the table `home_banners` */
 
-insert  into `home_banners`(`b_id`,`title`,`image`,`org_image`,`status`,`create_at`,`update_at`,`create_by`) values (4,'Best online IAS Academy','1581683994.jpg','3.jpg',1,'2020-02-14 18:08:57','2020-02-14 18:09:54',3),(5,'Best online IAS Academy	','1581684116.jpg','3.jpg',1,'2020-02-14 18:11:55','2020-02-14 18:11:55',3);
+insert  into `home_banners`(`b_id`,`subtitle`,`title`,`image`,`org_image`,`status`,`create_at`,`update_at`,`create_by`) values (4,' BY Mr. Kiran Anishetti','Best Online IAS Academy','1581683994.jpg','3.jpg',1,'2020-02-14 18:08:57','2020-02-19 11:17:50',3),(5,'BY Mr. Kiran Anishetti','Best Online IAS Academy ','1581684116.jpg','3.jpg',1,'2020-02-14 18:11:55','2020-02-19 11:25:16',3);
 
 /*Table structure for table `payment_details` */
 
@@ -127,11 +128,11 @@ CREATE TABLE `payment_details` (
   `created_at` datetime DEFAULT NULL,
   `created_by` int(11) DEFAULT NULL,
   PRIMARY KEY (`p_d_id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 /*Data for the table `payment_details` */
 
-insert  into `payment_details`(`p_d_id`,`c_id`,`p_id`,`total_amt`,`paid_amt`,`coupon_code`,`razorpay_payment_id`,`razorpay_order_id`,`razorpay_signature`,`status`,`created_at`,`created_by`) values (1,17,1,'12000','10000','2000','pay_EHUzzSNxwnHkrp','','',1,'2020-02-16 23:06:42',17);
+insert  into `payment_details`(`p_d_id`,`c_id`,`p_id`,`total_amt`,`paid_amt`,`coupon_code`,`razorpay_payment_id`,`razorpay_order_id`,`razorpay_signature`,`status`,`created_at`,`created_by`) values (1,17,1,'12000','10000','2000','pay_EHUzzSNxwnHkrp','','',1,'2020-02-16 23:06:42',17),(2,16,1,'12000','12000','','pay_EI435vceLUiU76','','',1,'2020-02-18 09:23:19',16),(3,18,1,'12000','12000','','pay_EIUsoCUWnJi6rJ','','',1,'2020-02-19 11:39:00',18);
 
 /*Table structure for table `payments` */
 
