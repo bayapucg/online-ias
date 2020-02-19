@@ -11,8 +11,10 @@
 					  <div class="carousel-item active">
 						<div class="carousel-background"><img src="<?php echo base_url('assets/home_banners/'.$li['image']); ?>" alt=""></div>
 						<div class="carousel-container">
+						  
 						  <div class="carousel-content">
 							<h2><?php echo isset($li['title'])?$li['title']:''; ?></h2>
+							<h2><?php echo isset($li['subtitle'])?$li['subtitle']:''; ?></h2>
 						  </div>
 						</div>
 					  </div>
@@ -20,8 +22,9 @@
 					<div class="carousel-item">
 						<div class="carousel-background"><img src="<?php echo base_url('assets/home_banners/'.$li['image']); ?>" alt=""></div>
 						<div class="carousel-container">
-						  <div class="carousel-content">
+						   <div class="carousel-content">
 							<h2><?php echo isset($li['title'])?$li['title']:''; ?></h2>
+							<h2><?php echo isset($li['subtitle'])?$li['subtitle']:''; ?></h2>
 						  </div>
 						</div>
 					  </div>
@@ -50,7 +53,6 @@
 
         <header class="section-header">
           <h3>About Us</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         </header>
 
         <div class="row about-cols">
@@ -107,7 +109,6 @@
 
         <header class="section-header wow fadeInUp">
           <h3>Built for modern teams</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
         </header>
 
         <div class="row">

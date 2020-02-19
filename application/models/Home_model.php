@@ -13,7 +13,7 @@ class Home_model extends CI_Model
 		return $insert_id = $this->db->insert_id();
 	}
 	public  function get_banners_list(){
-		$this->db->select('b_id,title,image,org_image,')->from('home_banners');
+		$this->db->select('b_id,title,subtitle,image,org_image,')->from('home_banners');
 		$this->db->where('status',1);
 		return $this->db->get()->result_array();
 	}

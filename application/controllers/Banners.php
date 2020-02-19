@@ -72,6 +72,7 @@ class Banners extends Sidebar {
 								$image='';
 							}
 					$add_data=array(
+					'subtitle'=>isset($post['subtitle'])?$post['subtitle']:'',
 					'title'=>isset($post['title'])?$post['title']:'',
 					'image'=>$image,
 					'org_image'=>isset($_FILES['image']['name'])?$_FILES['image']['name']:'',
@@ -115,6 +116,8 @@ class Banners extends Sidebar {
 							}
 					$update_data=array(
 					'title'=>isset($post['title'])?$post['title']:'',
+					'subtitle'=>isset($post['subtitle'])?$post['subtitle']:'',
+
 					'image'=>$image,
 					'org_image'=>$org_name,
 					'update_at'=>date('Y-m-d H:i:s'),

@@ -35,6 +35,11 @@
                         <td>Paid Amount</td>
                         <td><?php echo isset($p_d['paid_amt'])?$p_d['paid_amt']:''; ?></td>
                       </tr>
+					  <tr>
+					  <td>
+					     <a href="<?php echo base_url('videos/clarification'); ?>" class="btn btn-primary">Go to Videos</a>		
+						</td>
+					  </tr>
 					   </tbody>
                   </table>
         

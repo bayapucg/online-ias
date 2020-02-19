@@ -9,7 +9,7 @@
 					<div class="col-md-12">
 						<header class="section-header">
 						  <h3>Contact Us</h3>
-						  <p class="text-left">The founder and faculty Mr. Surya Kiran is a post graduate in Political Science, Public Administration and Business Administration</p>
+						  <p class="text-left">The founder and faculty Mr.Kiran is a post graduate in Political Science, Public Administration and Business Administration</p>
 						</header>
 						
 					</div>

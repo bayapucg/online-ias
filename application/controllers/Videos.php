@@ -40,5 +40,20 @@ class Videos extends Frontend {
 				redirect('user');
 			}
 	}
+	public function clarification()
+	{	
+		if($this->session->userdata('rs_d'))
+			{
+				$cd=$this->session->userdata('rs_d');
+				$this->load->view('html/clarification');
+				$this->load->view('html/footer');
+				$this->load->view('html/footer-links');
+				
+				
+		}else{
+				$this->session->set_flashdata('error',"Please log in or sign up to continue");
+				redirect('user');
+			}
+	}
 	
 }

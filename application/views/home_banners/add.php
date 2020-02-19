@@ -36,6 +36,14 @@
 								</div>
 							</div>
                         </div>
+						<div class="col-md-8">
+							<div class="form-group">
+								<label class=" control-label">Sub Title</label>
+								<div class="">
+									<input type="text" class="form-control" name="subtitle" id="subtitle" value="" placeholder="Enter Subtitle" />
+								</div>
+							</div>
+                        </div>
 						
 						<div class="col-md-8">
 							<div class="form-group">

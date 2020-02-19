@@ -38,6 +38,14 @@
 								</div>
 							</div>
                         </div>
+						<div class="col-md-8">
+							<div class="form-group">
+								<label class=" control-label">Sub Title</label>
+								<div class="">
+									<input type="text" class="form-control" name="subtitle" id="subtitle" value="<?php echo isset($details['subtitle'])?$details['subtitle']:''; ?>" placeholder="Enter Subtitle" />
+								</div>
+							</div>
+                        </div>
 						
 						<div class="col-md-8">
 							<div class="form-group">
@@ -83,10 +91,6 @@ $(document).ready(function() {
                 validators: {
 					notEmpty: {
 						message: 'Title is required'
-					},
-					regexp: {
-					regexp:/^[ A-Za-z0-9_@.,/!;:}{@#&`~"\\|^?$*)(_+-]*$/,
-					message:'Title wont allow <> [] = % '
 					}
 				}
             },image: {

@@ -5,7 +5,7 @@
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>Online IAS Academy</h3>
-            <p>The founder and faculty Mr. Surya Kiran is a post graduate in Political Science, Public Administration and Business Administration </p>
+            <p>The founder and faculty Mr.Kiran is a post graduate in Political Science, Public Administration and Business Administration </p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -22,9 +22,9 @@
           <div class="col-lg-3 col-md-6 footer-contact">
             <h4>Contact Us</h4>
             <p>
-              H.N.O.1-9-295/3,Vittal Nagar,Ram Nagar Gundu Vidhya Nagar,Hyderabad, pin 500044<br>
+              H.N.O.1-9-295/3, Vittal Nagar, Ram Nagar Gundu Vidhya Nagar, Hyderabad.<br> Pin code - 500044<br>
               <strong>Phone:</strong> +91 9963173255<br>
-              <strong>Email:</strong> info@onlineiasacademy.com/<br>
+              <strong>Email:</strong> info@onlineiasacademy.com<br>
             </p>
 
             <div class="social-links">
