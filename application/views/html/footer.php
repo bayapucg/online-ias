@@ -49,8 +49,8 @@
     </div>
 
     <div class="container">
-      <div class="copyright">
-       © 2019   Copyright <strong>onlineiasacademy</strong>. All Rights Reserved
+      <div class="copyright" style="text-align:left">
+       © 2019   Copyright <strong>onlineiasacademy</strong>. <span class="pull-right">Powered by thedigitalseer.com</span>
       </div>
      
     </div>
