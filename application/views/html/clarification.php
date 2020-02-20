@@ -1,32 +1,41 @@
 
-<section style="background:#f1f1f1;" >
-
+	<main id="main mt-5">
+		<section id="about" style="padding:2px 0px 0px 0px;margin-top:100px;">
+		<div class="container mt-5">
+			
+		</div>
 		
-		<div class="clearfix">&nbsp;</div>
-		<div class="clearfix">&nbsp;</div>
-		<div class="clearfix">&nbsp;</div>
-		<div class="clearfix">&nbsp;</div>
-		<div class="container-fluid">
-		<div class="row">
-		<div class="col-md-6">
-			<div class="card">
+		</section>
+		<section >
+			<div class="container mt-5">
+				<div class="row">
+				
+					<div class="col-md-6">
+					<div class="card">
 				
 				<div class="py-2">
-					<h1 class="text-center"><a href="<?php echo base_url('videos/index'); ?>">Saved Online Videos</a></h1>
+					<h1 class="text-center"><a href="<?php echo base_url('videos/index'); ?>">Past Video Classes</a></h1>
 				</div>
 			 </div>
-		</div>
-		<div class="col-md-6">
-			<div class="card">
+					</div>
+					
+					<div class="col-md-6">
+						<div class="card">
 				
 				<div class="py-2">
-					<h1 class="text-center"><a href="https://zoom.us/signin" target="_blank">Fast Online Videos</a></h1>
+					<h1 class="text-center"><a href="https://zoom.us/signin" target="_blank">Click Here For Live Session</a></h1>
 				</div>
 			 </div>
+						
+					</div>
+				</div>
+			</div>
+			
+		</section>
+			<section id="about" style="padding:2px 0px 0px 0px;margin-top:100px;">
+		<div class="container mt-5">
+			
 		</div>
 		
-
-		
-		</div>
-		</div>
-	</section>
+		</section>
+		</main>

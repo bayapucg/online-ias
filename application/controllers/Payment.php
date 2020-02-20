@@ -87,7 +87,7 @@ class Payment extends Frontend {
 								"key"               => $api_id,
 								"amount"            => $amount,
 								"name"              => $user_d['name'],
-								"description"       => $p_d['description'],
+								"description"       => $p_d['title'],
 								"image"             => "",
 								"prefill"           => [
 								"name"              => $user_d['name'],

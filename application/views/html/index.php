@@ -101,55 +101,43 @@
       </div>
     </section><!-- #about -->
 
-    <!--==========================
-      Services Section
-    ============================-->
-    <section id="services">
+   
+	<?php if(isset($dem_video) && count($dem_video)>0){ ?>
+	<section class="saved-videos">
       <div class="container">
 
         <header class="section-header wow fadeInUp">
-          <h3>Built for modern teams</h3>
+          <h3>Online IAS academy videos</h3>
+          
         </header>
 
         <div class="row">
-
-         
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">HD video and audio</a></h4>
-            <p class="description">Bring HD video and audio to your meetings with support for up to 1000 video participants and 49 videos on screen.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Built-in collaboration tools</a></h4>
-            <p class="description">Multiple participants can share their screens simultaneously and co-annotate for a more interactive meeting.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Meet securely</a></h4>
-            <p class="description">End-to-end encryption for all meetings, role-based user security, password protection, waiting rooms, and place attendee on hold.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Recording and transcripts</a></h4>
-            <p class="description">Record your meetings locally or to the cloud, with searchable transcripts.</p>
-          </div>
-          <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Streamlined calendaring</a></h4>
-            <p class="description">Support scheduling or starting meetings from Outlook, Gmail, or iCal.</p>
-          </div>
-		  <div class="col-lg-4 col-md-6 box wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="icon"><i class="ion-ios-paper-outline"></i></div>
-            <h4 class="title"><a href="">Team Chat</a></h4>
-            <p class="description">Chat with groups, searchable history, integrated file sharing, and 10 year archive. Easily escalate into 1:1 or group calls.</p>
-          </div> 
+	<?php foreach($dem_video as $li){ ?>
+         <div class="col-md-3">
+			 <div class="card">
+				<video controls width="100%">
+					<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/mp4">
+					<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/ogg">
+				</video>
+				<a href="video-details.php">
+				<div class="py-2">
+					<h5 class="text-center"><?php echo isset($li['title'])?$li['title']:''; ?></h5>
+				</div></a>
+			 </div>
+		 </div>
+	<?php } ?>
+		  
+		 <div class="col-md-12 text-right mt-3">
+			 <a href="<?php echo base_url('videos'); ?>" class="btn btn-primary"> See More Videos</a>
+		 </div>
 		 
 
         </div>
 
       </div>
-    </section> 
+    </section>
+	<?php } ?>
+	<!--
 	<section class="saved-videos">
       <div class="container">
 
@@ -207,86 +195,9 @@
         </div>
 
       </div>
-    </section>
-	<?php if(isset($dem_video) && count($dem_video)>0){ ?>
-	<section class="saved-videos">
-      <div class="container">
-
-        <header class="section-header wow fadeInUp">
-          <h3>IAS VIDEOS</h3>
-          
-        </header>
-
-        <div class="row">
-	<?php foreach($dem_video as $li){ ?>
-         <div class="col-md-3">
-			 <div class="card">
-				<video controls width="100%">
-					<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/mp4">
-					<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/ogg">
-				</video>
-				<a href="video-details.php">
-				<div class="py-2">
-					<h5 class="text-center"><?php echo isset($li['title'])?$li['title']:''; ?></h5>
-				</div></a>
-			 </div>
-		 </div>
-	<?php } ?>
-		  
-		 <div class="col-md-12 text-right mt-3">
-			 <a href="<?php echo base_url('videos'); ?>" class="btn btn-primary"> See More Videos</a>
-		 </div>
-		 
-
-        </div>
-
-      </div>
-    </section>
-	<?php } ?>
-
-    <!--==========================
-      Call To Action Section
-    ============================-->
-    <section id="call-to-action" class="wow fadeIn">
-      <div class="container text-center">
-        <h3>Call To Action</h3>
-        <p> For a free initial consultation about your clinical negligence claim, call us on +91 9963173255  or contact us online and we’ll get back to you as soon as possible.</p>
-      
-      </div>
-    </section>
-    <section id="facts"  class="wow fadeIn">
-      <div class="container">
-
-        <header class="section-header">
-          <h3>Facts</h3>
-          <p>Customers who switch to Zoom report an increase in performance, trust, and engagement</p>
-        </header>
-
-        <div class="row counters">
-
-  				<div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">92  </span> 
-            <p>92% report an increase in performance</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">82</span>
-            <p>82% report a greater sense of trust</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">91</span>
-            <p>91% report a greater sense of engagement
-</p>
-  				</div>
-
-          <div class="col-lg-3 col-6 text-center">
-            <span data-toggle="counter-up">85</span>
-            <p>85% saw an increase in video usage</p>
-  				</div>
-
-  			</div></div>
-    </section>
+    </section>-->
+    
+    
     
    
 	
