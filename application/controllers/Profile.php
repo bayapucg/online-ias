@@ -16,6 +16,7 @@ class Profile extends Frontend {
 				$cd=$this->session->userdata('rs_d');
 				$data['cdata']=$this->User_model->get_customer_data($cd['c_id']);
 				$this->load->view('html/profile',$data);
+				$this->load->view('html/footer');
 				$this->load->view('html/footer-links');
 			}else{
 				$this->session->set_flashdata('error',"Please log in or sign up to continue");
@@ -30,6 +31,7 @@ class Profile extends Frontend {
 				$data['p_u_list']=$this->User_model->get_payment_user_list($l_data['c_id']);
 				//echo '<pre>';print_r($l_data);exit;
 				$this->load->view('html/complete_payment_list',$data);
+				$this->load->view('html/footer');
 				$this->load->view('html/footer-links');
 
 		}else{
@@ -44,6 +46,7 @@ class Profile extends Frontend {
 				$cd=$this->session->userdata('rs_d');
 				$data['cdata']=$this->User_model->get_customer_data($cd['c_id']);
 				$this->load->view('html/profile-edit',$data);
+				$this->load->view('html/footer');
 				$this->load->view('html/footer-links');
 			}else{
 				$this->session->set_flashdata('error',"Please log in or sign up to continue");
@@ -108,6 +111,7 @@ class Profile extends Frontend {
 				$cd=$this->session->userdata('rs_d');
 				$data['cdata']=$this->User_model->get_customer_data($cd['c_id']);
 				$this->load->view('html/change-password',$data);
+				$this->load->view('html/footer');
 				$this->load->view('html/footer-links');
 			}else{
 				$this->session->set_flashdata('error',"Please log in or sign up to continue");
