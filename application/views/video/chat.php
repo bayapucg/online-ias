@@ -129,11 +129,11 @@
 <div class="content-wrapper">
    <section class="content-header mb-4">
       <h1>
-         Suggestion
+         Chat
       </h1>
       <ol class="breadcrumb">
          <li><a href="<?php echo base_url('dashboard'); ?>"><i class="fa fa-dashboard"></i> Home</a></li>
-         <li class="active">Suggestion</li>
+         <li class="active">Chat</li>
       </ol>
    </section>
    <section class="content">
