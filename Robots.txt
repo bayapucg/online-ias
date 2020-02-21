@@ -1,0 +1,5 @@
+User-agent: Googlebot
+Disallow: /local/
+Allow: /
+
+Sitemap: https://onlineiasacademy.com/sitemap.xml
