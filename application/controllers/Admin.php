@@ -66,8 +66,8 @@ class Admin extends CI_Controller {
 				$this->load->library('email');
 				$this->email->set_newline("\r\n");
 				$this->email->set_mailtype("html");
-				$this->email->from($post['email']);
-				$this->email->to('admin@hospil.com');
+				$this->email->to($post['email']);
+				$this->email->from('info@onlineiasacademy.com');
 				$this->email->subject('forgot - password');
 				$body = "Your login password is : ".$check_email['org_password'];
 				$this->email->message($body);

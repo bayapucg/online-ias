@@ -120,8 +120,8 @@ class User extends CI_Controller {
 				$this->load->library('email');
 				$this->email->set_newline("\r\n");
 				$this->email->set_mailtype("html");
-				$this->email->from($check_email['email']);
-				$this->email->to('info@onlineiasacademy.com');
+				$this->email->to($check_email['email']);
+				$this->email->from('info@onlineiasacademy.com');
 				$this->email->subject('forgot - password');
 				$body = $this->load->view('email/forgot',$data,TRUE);
 				//echo $body;exit;

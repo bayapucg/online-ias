@@ -1,7 +1,7 @@
 <footer class="main-footer">
     <div class="pull-right hidden-xs">
-      <b>by</b> Sai Farms 
+      <b></b>&nbsp; 
     </div>
-    <strong>SAI FARMS</strong>
+    <strong>By thedigitalseer.com</strong>
   </footer>
  
