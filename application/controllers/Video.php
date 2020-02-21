@@ -40,6 +40,46 @@ class Video extends sidebar {
 				redirect('admin');
 			}
 	}
+	public function chat()
+	{	
+		if($this->session->userdata('sai_f'))
+			{
+				$l_data=$this->session->userdata('sai_f');
+				$vid=base64_decode($this->uri->segment(3));				
+				$data['v_d']=$this->Video_model->get_video_details($vid);
+				$data['u_list']=$this->Video_model->get_all_employees();					
+				$data['c_u_d']=$this->Video_model->get_video_chat_details_list($vid);					
+				//echo '<pre>';print_r($data);exit;
+				$this->load->view('video/chat',$data);
+				$this->load->view('admin/footer');
+				$this->load->view('admin/footer-links');
+			}else{
+				$this->session->set_flashdata('error','Please login to continue');
+				redirect('admin');
+			}
+	}
+	public  function chatpost(){
+		if($this->session->userdata('sai_f'))
+		{
+			
+			$l_data=$this->session->userdata('sai_f');
+			$post=$this->input->post();
+			$cd_p=array(
+			'v_c_id'=>isset($post['u_id'])?$post['u_id']:'',
+			'v_id'=>isset($post['v_id'])?$post['v_id']:'',
+			'm_text'=>isset($post['message'])?$post['message']:'',
+			'type'=>'Replyed',
+			'created_at'=>date('Y-m-d h:i:s'),
+			'created_by'=>isset($l_data['id'])?$l_data['id']:'',
+			);
+			//echo '<pre>';print_r($u_data);exit;
+			$this->Video_model->save_send_msgs($cd_p);
+			redirect('video/chat/'.base64_encode($post['v_id']));
+		}else{
+			$this->session->set_flashdata('error','Please login to continue');
+			redirect('admin');
+		}
+	}
 	public function assign()
 	{	
 		if($this->session->userdata('sai_f'))

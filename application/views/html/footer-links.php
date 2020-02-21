@@ -34,6 +34,12 @@
 	   
 	   
 	});
+		scrollToBottom('div0');
+
+	function scrollToBottom(id) {
+        var div = document.getElementById(id);
+        div.scrollTop = div.scrollHeight - div.clientHeight;
+    }
 	</script>
   <script src="<?php echo base_url(); ?>assets/design/lib/easing/easing.min.js"></script>
   <script src="<?php echo base_url(); ?>assets/design/lib/superfish/hoverIntent.js"></script>

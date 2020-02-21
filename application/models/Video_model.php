@@ -48,5 +48,16 @@ class Video_model extends CI_Model
 		$this->db->where('status',1);
         return $this->db->get()->result_array();
 	}
+	public  function save_send_msgs($d){
+		$this->db->insert('chat_msgs', $d);
+		return $insert_id = $this->db->insert_id();
+	}
+	public  function get_video_chat_details_list($vid){
+		$this->db->select('cm.c_m_id,cm.v_c_id,cm.m_text,cm.type,cm.created_at,cs.name as c_name,a.name as ad_name,cs.p_pic,a.profile_pic')->from('chat_msgs as cm');
+		$this->db->join('customers as cs','cs.c_id=cm.created_by AND cm.type="Reply"','left');	
+		$this->db->join('admin as a','a.id=cm.created_by AND cm.type="Replyed"','left');
+		$this->db->where('cm.v_id',$vid);
+		return $this->db->get()->result_array();
+	}
 
 }

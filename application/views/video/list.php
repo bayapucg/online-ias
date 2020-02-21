@@ -50,6 +50,7 @@
 						<a href="<?php echo base_url('video/status/'.base64_encode($li['v_id']).'/'.base64_encode($li['status'])); ?>" class="confirmation"><i class="fa fa-pencil btn btn-success"></i></a>
 						<a href="<?php echo base_url('video/edit/'.base64_encode($li['v_id'])); ?>"  data-toggle="tooltip" title="Edit"><i class="fa fa-edit btn btn-warning"></i></a>
 						<a href="<?php echo base_url('video/delete/'.base64_encode($li['v_id'])); ?>" data-toggle="tooltip" title="Delete" class="confirmation"><i class="fa fa-trash btn btn-danger"></i></a>
+						<a href="<?php echo base_url('video/chat/'.base64_encode($li['v_id'])); ?>" data-toggle="tooltip" title="Chat" class=""><i class="fa fa-envelope btn btn-danger"></i></a>
 						
 					 </td>
 					</tr>

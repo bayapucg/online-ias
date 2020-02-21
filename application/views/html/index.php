@@ -119,7 +119,7 @@
 					<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/mp4">
 					<source src="<?php echo base_url('assets/video/'.$li['video']); ?>" type="video/ogg">
 				</video>
-				<a href="video-details.php">
+				<a href="<?php echo base_url('videos/details/'.base64_encode($li['v_id'])); ?>">
 				<div class="py-2">
 					<h5 class="text-center"><?php echo isset($li['title'])?$li['title']:''; ?></h5>
 				</div></a>
