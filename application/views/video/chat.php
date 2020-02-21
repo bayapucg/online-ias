@@ -168,7 +168,7 @@
 										<?php if($list['p_pic']!=''){ ?>
 											   <img class="direct-chat-img" src="<?php echo base_url('assets/profile_pic/'.$list['p_pic']); ?>" alt="<?php echo $list['p_pic']; ?>">
 										<?php }else{ ?>
-										<img class="direct-chat-img" src="<?php echo base_url('assets/profile_pic/default.jpg'); ?>" alt="Image">
+										<img class="direct-chat-img" src="<?php echo base_url('assets/profile_pic/user.jpg'); ?>" alt="Image">
 										<?php }?>										
 										<div class="direct-chat-text">
 										<?php echo $list['m_text']; ?>
@@ -185,7 +185,7 @@
 								<?php if($list['profile_pic']!=''){ ?>
 									   <img class="direct-chat-img" src="<?php echo base_url('assets/profile_pic/'.$list['profile_pic']); ?>" alt="<?php echo $list['profile_pic']; ?>">
 								<?php }else{ ?>
-								<img class="direct-chat-img" src="<?php echo base_url('assets/profile_pic/default.jpg'); ?>" alt="Image">
+								<img class="direct-chat-img" src="<?php echo base_url('assets/profile_pic/user.jpg'); ?>" alt="Image">
 								<?php }?>
 								  
 								  <div class="direct-chat-text">
