@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Online IAS Academy </title>
+  <title>Online IAS Academy | By Kiran Anishetti </title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="" name="keywords">
-  <meta content="" name="description">
+  <meta content="onlineiasacademy, online-ias-academy, online ias academy in hyderabad, political science, upsc mains, civil services" name="keywords">
+  <meta content="Online IAS Academy - The vision to reach millions of Civil Service aspirants all over India especially with optional subjects Political Science and International Relations." name="description">
 
   <!-- Favicons -->
   <link href="<?php echo base_url(); ?>assets/design/img/favicon.png" rel="icon">
@@ -40,8 +40,21 @@
   <script src="<?php echo base_url(); ?>assets/design/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="<?php echo base_url(); ?>assets/design/js/bootstrapValidator.js"></script>
   <script src="<?php echo base_url(); ?>assets/design/js/jquery.dataTables.min.js"></script>
-  <script src="<?php echo base_url(); ?>assets/design/js/dataTables.bootstrap4.min.js"></script>
-</head>
+  <script src="<?php echo base_url(); ?>assets/design/js/dataTables.bootstrap4.min.js"></script> 
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158852895-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158852895-1');
+</script>
+
+</head> 
+
+
 <?php if($this->session->flashdata('success')): ?>
 <div class="alert_msg1 animated slideInUp bg-succ">
    <?php echo $this->session->flashdata('success');?> &nbsp; <i class="fa fa-check text-success ico_bac" aria-hidden="true"></i>
