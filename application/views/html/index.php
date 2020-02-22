@@ -52,7 +52,7 @@
       <div class="container">
 
         <header class="section-header">
-          <h3>About Us</h3>
+          <h3> Why Online IAS Academy?</h3>
         </header>
 
         <div class="row about-cols">
@@ -60,12 +60,12 @@
           <div class="col-md-4 wow fadeInUp">
             <div class="about-col">
               <div class="img">
-                <img src="<?php echo base_url(); ?>assets/design/img/about-mission.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div>
+               <!-- <img src="<?php echo base_url(); ?>assets/design/img/about-mission.jpg" alt="" class="img-fluid"> 
+                <div class="icon"><i class="ion-ios-speedometer-outline"></i></div> -->
               </div>
-              <h2 class="title"><a href="#">Unparalleled usability </a></h2>
+              <h2 class="title"><a href="#">UPSC classes at your doorstep </a></h2>
               <p>
-               Enable quick adoption with meeting capabilities that make it easy to start, join, and collaborate across any device.
+               UPSC classes at your doorstep.
               </p>
             </div>
           </div>
@@ -73,12 +73,12 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
-                <img src="<?php echo base_url(); ?>assets/design/img/about-plan.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-list-outline"></i></div>
+               <!-- <img src="<?php echo base_url(); ?>assets/design/img/about-plan.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-list-outline"></i></div> -->
               </div>
-              <h2 class="title"><a href="#">Join anywhere, on any device</a></h2>
+              <h2 class="title"><a href="#">Online classes played at your convience</a></h2>
               <p>
-                Meetings syncs with your calendar system and delivers streamlined enterprise-grade video conferencing from desktop and mobile.
+                Online classes played at your convience.
               </p>
             </div>
           </div>
@@ -86,12 +86,12 @@
           <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
-                <img src="<?php echo base_url(); ?>assets/design/img/about-vision.jpg" alt="" class="img-fluid">
-                <div class="icon"><i class="ion-ios-eye-outline"></i></div>
+               <!-- <img src="<?php echo base_url(); ?>assets/design/img/about-vision.jpg" alt="" class="img-fluid">
+                <div class="icon"><i class="ion-ios-eye-outline"></i></div> -->
               </div>
-              <h2 class="title"><a href="#">Video for every need </a></h2>
+              <h2 class="title"><a href="#">Cost effective Course </a></h2>
               <p>
-                Enable internal and external communications, all-hands meetings, and trainings through one communications platform.
+                Cost effective Course.
               </p>
             </div>
           </div>
