@@ -21,7 +21,7 @@
             <!-- /.box-header -->
             <!-- form start -->
 			<div style="padding:20px;">
-            <form id="changepassword" method="post" class="" action="<?php echo base_url('profile/changepasswordpost'); ?>" enctype="multipart/form-data">
+            <form id="changepassword" method="post" class="" action="<?php echo base_url('profiles/changepasswordpost'); ?>" enctype="multipart/form-data">
 							<?php $csrf = array(
 								'name' => $this->security->get_csrf_token_name(),
 								'hash' => $this->security->get_csrf_hash()
