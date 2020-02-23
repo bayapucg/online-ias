@@ -54,7 +54,7 @@
         <header class="section-header">
           <h3> Why Online IAS Academy?</h3>
         </header>
-
+		<p>To impact quality IAS coaching for the aspirants residing at any nook and corner of the country. To empower the aspirant to have access to quality IAS coaching from the comfort of home. To emancipate the aspirant from Socio- Economic-Job-Family constrains, so that he/she can have access to quality IAS coaching at flexible time from home. Effective and Quality IAS coaching at affordable and competitive prize.  </p>
         <div class="row about-cols">
 
           <div class="col-md-4 wow fadeInUp">
