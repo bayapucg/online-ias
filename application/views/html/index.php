@@ -71,7 +71,7 @@
 		<p>To impact quality IAS coaching for the aspirants residing at any nook and corner of the country. To empower the aspirant to have access to quality IAS coaching from the comfort of home. To emancipate the aspirant from Socio- Economic-Job-Family constrains, so that he/she can have access to quality IAS coaching at flexible time from home. Effective and Quality IAS coaching at affordable and competitive prize.  </p>
         <div class="row about-cols">
 
-          <div class="col-md-4 wow fadeInUp">
+          <div class="col-md-12 wow fadeInUp">
             <div class="about-col">
               <div class="img">
                <!-- <img src="<?php echo base_url(); ?>assets/design/img/about-mission.jpg" alt="" class="img-fluid"> 
@@ -87,7 +87,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-md-12 wow fadeInUp" data-wow-delay="0.1s">
             <div class="about-col">
               <div class="img">
                <!-- <img src="<?php echo base_url(); ?>assets/design/img/about-plan.jpg" alt="" class="img-fluid">
@@ -104,7 +104,7 @@
             </div>
           </div>
 
-          <div class="col-md-4 wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-md-12 wow fadeInUp" data-wow-delay="0.2s">
             <div class="about-col">
               <div class="img">
                <!-- <img src="<?php echo base_url(); ?>assets/design/img/about-vision.jpg" alt="" class="img-fluid">
