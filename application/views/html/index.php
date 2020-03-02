@@ -78,7 +78,7 @@
                 <div class="icon"><i class="ion-ios-speedometer-outline"></i></div> -->
               </div>
 			  <br> 
-              <h2 class="title"><a href="#">UPSC classes at your doorstep </a></h2>
+              <h2 class="title">UPSC classes at your doorstep</h2>
 			  <br>
               <p> The mission of this online IAS academy platform is to empower every aspirant who is residing at any corner of the country to have access to quality UPSC coaching.</p> 
 			   <p> No aspirant should be deprived of access to quality UPSC coaching, just because of his/her disadvantaged geographical location. </p> 
@@ -94,7 +94,7 @@
                 <div class="icon"><i class="ion-ios-list-outline"></i></div> -->
               </div>
 			  <br>
-              <h2 class="title"><a href="#">Online classes played at your convience</a></h2> 
+              <h2 class="title">Online classes played at your convience</h2> 
 			  <br>
               <p>
                 The aspirant can have access to UPSC coaching from any part of the country through the online IAS academy platform.</p>
@@ -111,7 +111,7 @@
                 <div class="icon"><i class="ion-ios-eye-outline"></i></div> -->
               </div>
 			  <br>
-              <h2 class="title"><a href="#">Cost effective Course </a></h2>
+              <h2 class="title">Cost effective Course </h2>
 			  <br>
               <p>The mission of this online IAS academy platform is to impart quality UPSC coaching for every aspirant irrespective his/her geographical location. </p> 
 			  <p> To provide effective UPSC coaching at affordable and competitive prizes, around 1/4th less than the offline courses, with ought to compromising the quality of the course. </p> 
