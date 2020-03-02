@@ -2,12 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Online IAS Academy | By Kiran Anishetti </title>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta content="onlineiasacademy, online-ias-academy, online ias academy in hyderabad, political science, upsc mains, civil services" name="keywords">
-  <meta content="Online IAS Academy - The vision to reach millions of Civil Service aspirants all over India especially with optional subjects Political Science and International Relations." name="description">
-
-  <!-- Favicons -->
+  
   <link href="<?php echo base_url(); ?>assets/design/img/favicon.png" rel="icon">
   <link href="<?php echo base_url(); ?>assets/design/img/apple-touch-icon.png" rel="apple-touch-icon">
 
