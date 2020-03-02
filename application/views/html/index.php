@@ -3,6 +3,14 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
   <meta content="onlineiasacademy, online-ias-academy, online ias academy in hyderabad, political science, upsc mains, civil services" name="keywords"/>
   <meta content="Online IAS Academy - The vision to reach millions of Civil Service aspirants all over India especially with optional subjects Political Science and International Relations." name="description"/>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158852895-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-158852895-1');
+</script>
 </head>
 <section id="intro">
     <div class="intro-container">

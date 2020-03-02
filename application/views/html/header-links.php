@@ -38,14 +38,7 @@
   <script src="<?php echo base_url(); ?>assets/design/js/dataTables.bootstrap4.min.js"></script> 
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-158852895-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-158852895-1');
-</script>
 
 </head> 
 
