@@ -80,10 +80,8 @@
 			  <br> 
               <h2 class="title">UPSC classes at your doorstep</h2>
 			  <br>
-              <p> The mission of this online IAS academy platform is to empower every aspirant who is residing at any corner of the country to have access to quality UPSC coaching.</p> 
-			   <p> No aspirant should be deprived of access to quality UPSC coaching, just because of his/her disadvantaged geographical location. </p> 
-			   <p> All the regions of the nation should have adequate representation in All India Services and Central services. </p> 
-			   <p> Women; especially house wives should be empowered to have access to quality UPSC coaching, so that they can over come the constrains of time and house hold responsibilities, hence can have access to quality UPSC coaching at online IAS academy at their convinient time, from the comfort of their home. </p>  
+              <p> The mission of this online IAS academy platform is to empower every aspirant who is residing at any corner of the country to have access to quality UPSC coaching. No aspirant should be deprived of access to quality UPSC coaching, just because of his/her disadvantaged geographical location. </p> 
+			   <p> All the regions of the nation should have adequate representation in All India Services and Central services. Women; especially house wives should be empowered to have access to quality UPSC coaching, so that they can over come the constrains of time and house hold responsibilities, hence can have access to quality UPSC coaching at online IAS academy at their convinient time, from the comfort of their home. </p>  
             </div>
           </div>
 
@@ -97,10 +95,8 @@
               <h2 class="title">Online classes played at your convience</h2> 
 			  <br>
               <p>
-                The aspirant can have access to UPSC coaching from any part of the country through the online IAS academy platform.</p>
-				<p>The aspirant can have access to UPSC coaching classes at his/her convenient time; even if he or she missed the class, the same class will be uploaded on our website named "Online IAS Academy.com", so that the aspirant can access every missed class  through the website any number of times.  </p> 
-				<p> The aspirants who are persueing their higher education: can have access to UPSC coaching simultaneously. </p> 
-				<P> The classes are designed in such a way that the the Job–holder aspirants can have access to UPSC coaching in simulated live classes after his/her office hours. </p>
+                The aspirant can have access to UPSC coaching from any part of the country through the online IAS academy platform. The aspirant can have access to UPSC coaching classes at his/her convenient time; even if he or she missed the class, the same class will be uploaded on our website named "Online IAS Academy.com", so that the aspirant can access every missed class  through the website any number of times.  </p> 
+				<p> The aspirants who are persueing their higher education: can have access to UPSC coaching simultaneously.  The classes are designed in such a way that the the Job–holder aspirants can have access to UPSC coaching in simulated live classes after his/her office hours. </p>
             </div>
           </div>
 
@@ -113,13 +109,8 @@
 			  <br>
               <h2 class="title">Cost effective Course </h2>
 			  <br>
-              <p>The mission of this online IAS academy platform is to impart quality UPSC coaching for every aspirant irrespective his/her geographical location. </p> 
-			  <p> To provide effective UPSC coaching at affordable and competitive prizes, around 1/4th less than the offline courses, with ought to compromising the quality of the course. </p> 
-			  <p> To improve socio – economically week aspirants to have access to cost effective quality UPSC coaching at affordable prizes. </p> 
-			  <p> Aspirants need not to shift to metro policies for UPSC coaching, which is financially very cumbersome. </p> 
-			  <p> The aspirants need not refrain from during Job for UPSC coaching, which will be a big financial burden on the family, the aspirant can have access to qualify UPSC coaching even while doing his/her Job. 
-
-              </p>
+              <p>The mission of this online IAS academy platform is to impart quality UPSC coaching for every aspirant irrespective his/her geographical location. To provide effective UPSC coaching at affordable and competitive prizes, around 1/4th less than the offline courses, with ought to compromising the quality of the course. To improve socio – economically week aspirants to have access to cost effective quality UPSC coaching at affordable prizes. </p> 
+			  <p> Aspirants need not to shift to metro policies for UPSC coaching, which is financially very cumbersome. The aspirants need not refrain from during Job for UPSC coaching, which will be a big financial burden on the family, the aspirant can have access to qualify UPSC coaching even while doing his/her Job. </p>
             </div>
           </div>
 
