@@ -9,3 +9,6 @@ https://freyrsolutions-my.sharepoint.com/personal/rohit_nyathawada_freyrsolution
 
 Safety & Medical products 
 Freyr Safety products portfolio includes protective clothing, gloves, masks, eyewear and essential medical equipment dedicated to your safety and comfort 
+
+
+https://we.tl/t-KfPT2B1lLk 
