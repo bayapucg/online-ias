@@ -16,3 +16,19 @@ https://we.tl/t-KfPT2B1lLk
 
 
 https://elements.envato.com/gullu-digital-agency-multipurpose-html-template-WWB4HN
+
+1.	Select a theme.
+2.	Resize existing product images or use images from Envato.
+3.	Edit content in the selected theme.
+
+Please work together for few hours today & quickly come up with a draft website. 
+
+To give you an idea; have put around a demo. You are free to choose a different theme as well.
+
+Product Details:
+Product Brochure Attached.
+Video : https://youtu.be/SLCD0w7BJL8
+Website: https://www.carenowmedical.com/airmask/
+
+Will call you to discuss further.
+
