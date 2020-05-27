@@ -12,3 +12,7 @@ Freyr Safety products portfolio includes protective clothing, gloves, masks, eye
 
 
 https://we.tl/t-KfPT2B1lLk 
+
+
+
+https://elements.envato.com/gullu-digital-agency-multipurpose-html-template-WWB4HN
