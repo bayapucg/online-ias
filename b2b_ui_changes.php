@@ -35,3 +35,7 @@ Will call you to discuss further.
 
 https://teams.microsoft.com/l/meetup-join/19%3ameeting_YmMzNGY1YTUtNGUwNS00MjhmLWI2ZWItMGIzMGE2YzlmZTI1%40thread.v2/0?context=%7b%22Tid%22%3a%22e1dffae5-ca2f-4d3f-ba95-31318bc48aae%22%2c%22Oid%22%3a%222e599237-8792-42c9-8aed-6fe5ebd127be%22%2c%22IsBroadcastMeeting%22%3atrue%7d
 
+Payment Options : PayPal, Debit Cards,Credit Cards (Visa/MasterCard/Amex/)
+.
+Shipped under 48 hrs via Fedex, USPS
+
