@@ -39,3 +39,26 @@ Payment Options : PayPal, Debit Cards,Credit Cards (Visa/MasterCard/Amex/)
 .
 Shipped under 48 hrs via Fedex, USPS
 
+/* new faqs */
+How are Carenow R Eco Protect Quat Surface Disinfectant Wipes unique?
+The wipes are impregnated with an Alcohol free formulation containing quaternary ammonium compounds (salts of quaternary ammonium cations and act by disrupting the cell membrane or viral envelope) that can be used to disinfect a wide variety of medical and non-medical surfaces.
+
+What are the intended uses of Eco Protect Quat Surface Disinfectant Wipes?
+Use Carenow R Surface Disinfectant Wipes on the go for the hygienic protection of surfaces to eliminate the risk of cross-contamination.
+Are Carenow R Eco Protect Quat Surface Disinfectant Wipes tested for efficacy?
+Yes, the wipes are tested for bactericidal and fungicidal activity. These wipes are also capable of killing enveloped viruses such as human Corona virus, H1N1, SARS- Cov1 and others. Veridical testing has been conducted on bacteriophages and yielded a 99% kill rate. 
+What is the usage instruction of Eco Protect Quat Surface Wipes?
+Squeeze the pack all over to ensure even distribution of the formulation. Open the re-sealable label, pull out a wipe. Quickly close the re-sealable label to prevent drying it out. Wipe the desired skin/ surface area hygienically skin and dispose the used wipe. 
+What is the safety information I need to know while using Wipes?
+Use only as indicated. In case of contact with eyes, rinse immediately using a plenty of water.
+Seek medical advice immediately if swallowed. 
+
+How do I store Eco Protect Quat Surface Wipes?
+Store in a cool and dry place. Keep away from children.
+Where can I use Eco Protect Quat Surface Disinfectant Wipes?
+Keep Eco Protect Quat Surface Disinfectant Wipes handy for everyday use in your kitchen, bathroom, living room, or at work for everyday use. Clean your kitchen bench tops, bins, sinks, floors, walls, stoves, fridges, chairs, door handles, children’s toys, toilet seats, desks, keyboards, phones, laptops, outdoor exercise and more.
+Can I use the wipes in a healthcare environment?
+The wipes can be used on hard non-porous surfaces of diagnostic equipment, patient monitoring, dialysis machines, patient support bed railings, IV poles, glucometers, stethoscopes, ultrasound probes, scanners, MRI & CT machines, stretchers, tables, cabinets, carts, granite counters, exam table and others. 
+ 
+
+
