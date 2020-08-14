@@ -70,15 +70,4 @@ public function add_quick_buy_button() {
 ?>
 
 
-Hi Harish,
-This is to inform you that to perform my day to day regular office work I need a laptop. my personal laptop properly run slower than usable. I’m having a big challenge performing at my usual best.
 
-I personally feel that having a laptop can help aid me with my work, my productivity and also improve my service to the company.
-
-Considering all these facts I am requesting you a laptop to ensure smooth day to day official activities.
-
-I hope you take this request into consideration.
-
-Thank you for your kind attention.
-
-Regards,
